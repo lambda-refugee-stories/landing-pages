@@ -20,17 +20,47 @@
 
         .header-text {
             .section-top-margin();
-            padding: 0 2%;
+            .section-padding();
         }
 
     } 
 
     .who-is-a-refugee {
         .section-top-margin();
+        .section-padding();
+
+        p {
+            margin-top: 15px;
+        }
     }
 
     .stories-are-important {
         .section-top-margin();
+        .section-padding();
+        display: flex;
+        justify-content: space-between;
+
+
+         .stories-img-container {
+            width: 45%;
+            border: 2px solid red;
+
+            img {
+                width: 100%;
+                vertical-align: center;
+            }
+        }
+        
+        .stories-are-important-text {
+            width: 45%;
+
+            p {
+                margin-top: 15px;
+            }
+
+        }
+
+       
     }
 
     .story-previews {

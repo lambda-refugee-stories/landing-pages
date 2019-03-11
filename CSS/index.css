@@ -17,9 +17,30 @@
 }
 .home .who-is-a-refugee {
   margin-top: 35px;
+  padding: 0 2%;
+}
+.home .who-is-a-refugee p {
+  margin-top: 15px;
 }
 .home .stories-are-important {
   margin-top: 35px;
+  padding: 0 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.home .stories-are-important .stories-img-container {
+  width: 45%;
+  border: 2px solid red;
+}
+.home .stories-are-important .stories-img-container img {
+  width: 100%;
+  vertical-align: center;
+}
+.home .stories-are-important .stories-are-important-text {
+  width: 45%;
+}
+.home .stories-are-important .stories-are-important-text p {
+  margin-top: 15px;
 }
 .home .story-previews {
   margin-top: 35px;
