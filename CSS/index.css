@@ -126,54 +126,64 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* 
-
-// General Styles uncomment top
 * {
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
 }
-
-html, body {
+html,
+body {
   font-family: 'Ubuntu', sans-serif;
-  color: @main-font-color;
+  color: black;
 }
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Russo One', sans-serif;
-  color: @header-font-color;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Prata', sans-serif;
+  color: #970455;
 }
-
-h2 {
+h1 {
   font-size: 3.2rem;
 }
-
-h3 {
+h2 {
   font-size: 2.8rem;
 }
-
+h3 {
+  font-family: 'Rock Salt';
+  font-size: 2rem;
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-*/
+img {
+  max-width: 800px;
+}
+.navigation-section {
+  width: 100%;
+  height: 90px;
+  background-color: lightblue;
+}
+.navigation-section .nav-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-section .nav-container .nav {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-section .nav-container .nav a {
+  font-size: 1.4rem;
+  text-decoration: none;
+}
