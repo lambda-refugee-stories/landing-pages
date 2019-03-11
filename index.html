@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <title>Refugee Stories - Home</title>
+    <link href="CSS/index.css" rel="stylesheet" />
+    <script src="JS/index.js" async></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Prata"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rock Salt"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!---------- NAVIGATION SECTION ---------->
+    <section class="navigation-section">
+      <div class="container nav-container">
+        <h2 class="logo-heading">Refugee Stories</h2>
+        <nav class="nav">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#">Stories</a>
+          <a class="nav-link" href="#">Submit Your Story</a>
+          <a class="nav-link" href="#">Login</a>
+        </nav>
+      </div>
+    </section>
+
+    <div class="container home">
+      <!---------- HEADER SECTION ---------->
+      <header class="header-section">
+        <h1>
+          Stories of the
+          <span style="font-family:'Rock Salt'">Refugee</span>:<br />
+          The Cries and the Crisis
+        </h1>
+        <!---------- CAROUSEL COMPONENT ---------->
+        <div class="carousel">
+          <img class="placeholder-img" src="Images/computer.jpeg" />
+        </div>
+        <!-- 
+        <div class="carousel">
+          <div class="left-button"><</div>
+          <img src="Images/computer.jpeg" />
+          <img src="Images/mountains.jpeg" />
+          <img src="Images/trees.jpeg" />
+          <div class="right-button">></div>
+        </div>
+          -->
+          <p class="header-text">
+            Text about how we hear about the wars going on but seldom get to
+            hear the personal stories that those most affected have experiences.
+            Then the importance of this platform is to increase the awareness of
+            refugee experience and give them a platform to tell their story.
+            Maybe quote about human empathy.
+          </p>
+        
+      </header>
+
+      
+      <!---------- MAIN CONTENT SECTION ---------->
+      <section class="who-is-a-refugee">
+        <h2>Who is a <span style="font-family:'Rock Salt'">Refugee</span>?</h2>
+        <p>
+          Pastrami doner fatback swine pork loin salami burgdoggen, brisket
+          bresaola short ribs pork chop tongue sirloin leberkas. Porchetta pork
+          chop turducken corned beef kielbasa ham biltong cow. Tri-tip ball tip
+          rump tongue andouille pork sirloin. Fatback tongue swine, strip steak
+          cupim hamburger pork ribeye capicola prosciutto burgdoggen kevin cow
+          salami.
+        </p>
+
+        <p>
+          Swine rump kevin shank biltong jerky fatback hamburger meatloaf
+          pancetta. Shank hamburger alcatra biltong, cow landjaeger ham hock.
+          Bacon buffalo ground round, cupim sirloin ham pork loin drumstick
+          jerky pork. Frankfurter pastrami beef ribs hamburger, tail swine
+          landjaeger spare ribs strip steak shank corned beef ground round
+          t-bone.
+        </p>
+      </section>
+
+      <section class="stories-are-important">
+        <h2>Why are their <span style="font-family:'Rock Salt'">stories</span> important?</h2>
+        <p>
+          Pastrami doner fatback swine pork loin salami burgdoggen, brisket
+          bresaola short ribs pork chop tongue sirloin leberkas. Porchetta pork
+          chop turducken corned beef kielbasa ham biltong cow. Tri-tip ball tip
+          rump tongue andouille pork sirloin. Fatback tongue swine, strip steak
+          cupim hamburger pork ribeye capicola prosciutto burgdoggen kevin cow
+          salami.
+        </p>
+        <img
+          class="placeholder-img"
+          src="Images/trees.jpeg"
+          alt="Picture of refugee family"
+        />
+      </section>
+
+      <!---------- STORY PREVIEW SECTION --------->
+      <section class="story-previews">
+        <div class="preview">
+          <h3 class="headline">"Quote from first refugee story."</h3>
+          <span class="read-full-story">Ready full story </span>
+          <div class="author">
+            <div class="author-img-container">
+              <img
+                src="Images/fido.jpg"
+                alt="Representative picture of author"
+              />
+            </div>
+            <span>By JANE DOE</span>
+          </div>
+        </div>
+
+        <div class="preview">
+          <h3 class="headline">"Quote from second refugee story."</h3>
+          <span class="read-full-story">Ready full story </span>
+          <div class="author">
+            <div class="author-img-container">
+              <img
+                src="Images/fido.jpg"
+                alt="Representative picture of author"
+              />
+            </div>
+            <span>By JOHNNY APPLESEED</span>
+          </div>
+        </div>
+
+        <div class="preview">
+          <h3 class="headline">"Quote from third refugee story."</h3>
+          <span class="read-full-story">Ready full story </span>
+          <div class="author">
+            <div class="author-img-container">
+              <img
+                src="Images/fido.jpg"
+                alt="Representative picture of author"
+              />
+            </div>
+            <span>By JAMES ATLANTIC</span>
+          </div>
+        </div>
+        <button>View All Stories</button>
+      </section>
+      <!---------- SUBMIT YOUR STORY FORM  ---------->
+      <section class="submit-story-section">
+        <div class="submit-story-text">
+          <h2>Submit Your Story</h2>
+          <p>
+            If you are a refugee and would like to submit your story, please
+            fill out the form below. We value your voice and want to create a
+            safe space for you to be heard.
+          </p>
+        </div>
+        <form class="submit-story-form">
+          Name:<br />
+          <input class="short-line" type="text" name="name" /><br />
+          Your e-mail:<br />
+          <input class="short-line" type="email" name="email" /><br />
+          Your Story:<br />
+          <input class="long-line" type="text" name="message" /><br />
+          <input type="submit" value="Submit Your Story" />
+        </form>
+      </section>
+    </div>
+    <!---------- FOOTER SECTION ---------->
+    <footer class="footer-section">
+      <nav class="container nav-section">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="#">Stories</a>
+        <a class="nav-link" href="#">Submit Your Story</a>
+        <a class="nav-link" href="#">Login</a>
+      </nav>
+      <span>&copy; Refugee Stories 2019</span>
+    </footer>
+  </body>
+</html>
+
+<!-- From Applied JS Sprint Authors
+  <div class="card" data-tab="javascript">
+      <div class="headline">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/sir.jpg" />
+        </div>
+        <span>By SIR RUFF'N'STUFF</span>
+      </div>
+    </div>
+-->
