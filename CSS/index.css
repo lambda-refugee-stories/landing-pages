@@ -51,8 +51,7 @@
   border: 2px solid red;
 }
 .home .story-previews .preview {
-  background-color: lightcoral;
-  border: 1px solid green;
+  background-color: lightgrey;
   display: flex;
   flex-direction: row;
   margin-top: 35px;
@@ -69,13 +68,27 @@
 .home .story-previews .preview .preview-text h3 {
   text-align: center;
 }
+.home .story-previews .preview .preview-text .full-story-btn {
+  width: 30%;
+  background-color: #970455;
+  color: white;
+  padding: 10px 2px;
+  font-size: 1.4rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.home .story-previews .preview .preview-text .full-story-btn:hover {
+  background-color: white;
+  color: #970455;
+  cursor: pointer;
+}
 .home .story-previews .preview .author {
   width: 35%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid brown;
   flex-flow: wrap;
 }
 .home .story-previews .preview .author .author-img-container {
@@ -90,8 +103,61 @@
 .home .story-previews .btn {
   margin-top: 35px;
 }
+.home .story-previews .btn .view-stories-btn {
+  width: 100%;
+  background-color: #970455;
+  color: white;
+  padding: 10px 2px;
+  font-size: 1.4rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.home .story-previews .btn .view-stories-btn:hover {
+  background-color: white;
+  color: #970455;
+  cursor: pointer;
+}
 .home .submit-story-section {
   margin-top: 35px;
+  padding: 0 2%;
+}
+.home .submit-story-section p {
+  margin-top: 15px;
+}
+.home .submit-story-section .submit-story-form {
+  margin-top: 15px;
+  font-size: 1.6rem;
+}
+.home .submit-story-section .submit-story-form input {
+  font-size: 1.5rem;
+}
+.home .submit-story-section .submit-story-form input:focus {
+  background-color: #970455;
+  color: white;
+}
+.home .submit-story-section .submit-story-form .short-line {
+  width: 40%;
+  margin: 1% 0;
+}
+.home .submit-story-section .submit-story-form .long-line {
+  width: 60%;
+  height: 100px;
+  overflow: scroll;
+}
+.home .submit-story-section .submit-story-form input[type=submit] {
+  margin-top: 15px;
+  width: 20%;
+  background-color: #970455;
+  color: white;
+  padding: 10px 2px;
+  font-size: 1.4rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.home .submit-story-section .submit-story-form input[type=submit]:hover {
+  background-color: white;
+  color: #970455;
+  cursor: pointer;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
