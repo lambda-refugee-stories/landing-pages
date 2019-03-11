@@ -1,3 +1,32 @@
+.home {
+  width: 100%;
+}
+.home .header-section {
+  margin-top: 35px;
+}
+.home .header-section h1 {
+  text-align: center;
+  line-height: 1.5;
+}
+.home .header-section .carousel {
+  margin-top: 35px;
+}
+.home .header-section .header-text {
+  margin-top: 35px;
+  padding: 0 2%;
+}
+.home .who-is-a-refugee {
+  margin-top: 35px;
+}
+.home .stories-are-important {
+  margin-top: 35px;
+}
+.home .story-previews {
+  margin-top: 35px;
+}
+.home .submit-story-section {
+  margin-top: 35px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -146,7 +175,7 @@ h5 {
   color: #970455;
 }
 h1 {
-  font-size: 3.2rem;
+  font-size: 3.8rem;
 }
 h2 {
   font-size: 2.8rem;
@@ -157,7 +186,7 @@ h3 {
 }
 p {
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .container {
   max-width: 800px;
@@ -167,6 +196,11 @@ p {
 img {
   max-width: 800px;
 }
+/*
+ @m
+
+
+*/
 .navigation-section {
   width: 100%;
   height: 90px;
@@ -179,7 +213,7 @@ img {
   align-items: center;
 }
 .navigation-section .nav-container .nav {
-  width: 45%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
 }
@@ -193,9 +227,10 @@ img {
   background-color: lightblue;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 1.4rem;
+  margin-top: 35px;
 }
 .footer-section .nav-section {
   display: flex;
@@ -204,3 +239,9 @@ img {
 .footer-section .nav-section a {
   text-decoration: none;
 }
+/* Media query example
+@mobile: ~"(max-width: 500px)";
+
+
+
+*/
