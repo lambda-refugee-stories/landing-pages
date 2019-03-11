@@ -65,7 +65,64 @@
 
     .story-previews {
         .section-top-margin();
-    }
+        .section-padding();
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 2px solid red;
+
+        .preview {
+            background-color: lightcoral;
+            border: 1px solid green;
+            display: flex;
+            flex-direction: row;
+            .section-top-margin();
+            padding: 2%;
+            justify-content: space-between;
+
+            .preview-text {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                h3 {
+                    text-align: center;
+                }
+            }
+
+
+            .author {
+                width: 35%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                border: 1px solid brown;
+                flex-flow: wrap;
+
+                .author-img-container {
+                    width: 30%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    //border: 1px solid orange;
+                    text-align: center;
+                }
+
+            }
+        }// .preview
+        
+        .btn {
+            .section-top-margin();
+        }
+
+    } // .story-previews section
 
     .submit-story-section {
         .section-top-margin();
