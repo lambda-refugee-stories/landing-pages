@@ -1,6 +1,68 @@
+* {
+  box-sizing: border-box;
+}
 .home {
   width: 100%;
   background-color: white;
+  /*
+  .submit-story-section {
+    //.section-top-margin(); // because above button has bottom padding
+    .section-padding();
+
+    p {
+      margin-top: 15px;
+    }
+
+    .submit-story-form {
+      margin-top: 15px;
+      font-size: 1.6rem;
+
+      @media @mobile {
+          width: 90%;
+          margin: 10px auto 0;
+      }
+
+      input {
+        font-size: 1.5rem;
+
+        &:focus {
+          background-color: black;
+          color: @mustard;
+        }
+      }
+
+      .short-line {
+        width: 40%;
+        margin: 1% 0;
+
+        @media @mobile {
+            width: 90%;
+        
+        }
+      }
+
+      .long-line {
+        width: 60%;
+        height: 100px;
+        overflow: scroll;
+
+        @media @mobile {
+            width: 90%;
+        }
+      }
+
+      input[type="submit"] {
+        margin-top: 15px;
+        .custom-btn(20%);
+
+        @media @mobile {
+            .custom-btn(90%);
+        }
+      }
+    }
+  } // submit your story form
+
+  */
 }
 @media (max-width: 500px) {
   .home {
@@ -9,6 +71,21 @@
 }
 .home .header-section {
   padding-top: 35px;
+  /*
+    
+    
+    .carousel {
+      .section-top-margin();
+
+      @media @mobile {
+          display: none;
+      }
+
+
+    } 
+    
+    
+    */
 }
 .home .header-section h1 {
   text-align: center;
@@ -18,14 +95,6 @@
   .home .header-section h1 {
     width: 90%;
     margin: 0 auto;
-  }
-}
-.home .header-section .carousel {
-  margin-top: 35px;
-}
-@media (max-width: 500px) {
-  .home .header-section .carousel {
-    display: none;
   }
 }
 .home .header-section .header-text {
@@ -181,81 +250,6 @@
   color: #93101D;
   border: 1px solid #93101D;
   cursor: pointer;
-}
-.home .submit-story-section {
-  padding: 35px 2% 0;
-}
-.home .submit-story-section p {
-  margin-top: 15px;
-}
-.home .submit-story-section .submit-story-form {
-  margin-top: 15px;
-  font-size: 1.6rem;
-}
-@media (max-width: 500px) {
-  .home .submit-story-section .submit-story-form {
-    width: 90%;
-    margin: 10px auto 0;
-  }
-}
-.home .submit-story-section .submit-story-form input {
-  font-size: 1.5rem;
-}
-.home .submit-story-section .submit-story-form input:focus {
-  background-color: black;
-  color: #CBA328;
-}
-.home .submit-story-section .submit-story-form .short-line {
-  width: 40%;
-  margin: 1% 0;
-}
-@media (max-width: 500px) {
-  .home .submit-story-section .submit-story-form .short-line {
-    width: 90%;
-  }
-}
-.home .submit-story-section .submit-story-form .long-line {
-  width: 60%;
-  height: 100px;
-  overflow: scroll;
-}
-@media (max-width: 500px) {
-  .home .submit-story-section .submit-story-form .long-line {
-    width: 90%;
-  }
-}
-.home .submit-story-section .submit-story-form input[type="submit"] {
-  margin-top: 15px;
-  width: 20%;
-  background-color: black;
-  color: white;
-  padding: 10px 2px;
-  font-size: 1.4rem;
-  border: 1px solid grey;
-  border-radius: 5px;
-}
-.home .submit-story-section .submit-story-form input[type="submit"]:hover {
-  background-color: white;
-  color: #93101D;
-  border: 1px solid #93101D;
-  cursor: pointer;
-}
-@media (max-width: 500px) {
-  .home .submit-story-section .submit-story-form input[type="submit"] {
-    width: 90%;
-    background-color: black;
-    color: white;
-    padding: 10px 2px;
-    font-size: 1.4rem;
-    border: 1px solid grey;
-    border-radius: 5px;
-  }
-  .home .submit-story-section .submit-story-form input[type="submit"]:hover {
-    background-color: white;
-    color: #93101D;
-    border: 1px solid #93101D;
-    cursor: pointer;
-  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -628,6 +622,7 @@ img {
   margin-top: 15px;
 }
 .carousel {
+  margin: 0 auto;
   width: 100%;
   margin-top: 35px;
   display: flex;
@@ -645,54 +640,34 @@ img {
   align-items: center;
   flex-direction: row;
   color: white;
-  background-color: relative;
+  background-color: #93101D;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
-/*  
-
-
-.carousel {
-  .width-100();
-  .flex(center, center);
-  height: 500px;
-  position: relative;
-  overflow: hidden;
-  margin-top: 16px;
-  @media(min-width: 1200px){
-    width: 1200px;
-  }
-  .left-button, .right-button {
-    .flex(center);
-    color: @lambda-times-color-white;
-    background-color: @lambda-times-color-primary;
-    font-size: 40px;
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    &:hover {
-      color: @lambda-times-color-primary;
-      background-color: @lambda-times-color-white;
-      border: 2px solid @lambda-times-color-primary;
-    }
-  }
-  .left-button {
-    top: 50%; 
-    left: 25px;
-    transform: translate(0, -50%);
-  }
-  .right-button {
-    top: 50%; 
-    right: 25px;
-    transform: translate(0, -50%);
-  }
-  img {
-    .width-100();
-    display: none;
-  }
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #93101D;
+  background-color: white;
+  border: 2px solid #93101D;
 }
-
-
-
-
-*/
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+  z-index: 1;
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+  z-index: 1;
+}
+.carousel img {
+  width: 100%;
+  display: none;
+  position: absolute;
+}

@@ -7,9 +7,13 @@
   <title>Refugee Stories - Home</title>
   <link href="CSS/index.css" rel="stylesheet" />
   <script src="JS/index.js" async></script>
+  <script src="JS/carousel.js" async></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script> -->
   <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Rock Salt" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
+  
 </head>
 
 <body>
@@ -28,6 +32,8 @@
   </section>
 
   <div class="container home">
+
+
     <!---------- HEADER SECTION ---------->
     <header class="header-section">
       <h1>
@@ -35,19 +41,18 @@
         <span style="font-family:'Rock Salt'; color: #93101D">Refugee</span>:<br />
         The Cries and the Crisis
       </h1>
+
+
       <!---------- CAROUSEL COMPONENT ---------->
-      <div class="carousel">
-        <img class="placeholder-img" src="Images/umbrella.jpeg" />
-      </div>
-      <!-- 
+      
         <div class="carousel">
           <div class="left-button"><</div>
-          <img src="Images/umbrella.jpeg" />
-          <img src="Images/basket.jpeg" />
-          <img src="Images/mother-and-baby.jpeg" />
+          <img class="carouselImage" src="Images/umbrella.jpeg" />
+          <img class="carouselImage" src="Images/basket.jpeg" />
+          <img class="carouselImage" src="Images/mother-and-baby.jpeg" />
           <div class="right-button">></div>
         </div>
-          -->
+         
       <p class="header-text">
         There are more people displaced in the world today than at any time since the end of World War II and it is more
         important than ever to help people develop empathy for each other. Refugee Stories promotes awareness of the
@@ -98,7 +103,7 @@
           <div class="author-img-container">
             <img src="Images/cristian.jpeg" alt="Picture of author" />
           </div>
-          <p>By JANE</p>
+          <p>By JOHNNY</p>
         </div>
       </div>
 
@@ -111,7 +116,7 @@
           <div class="author-img-container">
             <img src="Images/penny.jpeg" alt="Picture of author" />
           </div>
-          <p>By JOHNNY</p>
+          <p>By JANE</p>
         </div>
       </div>
 
@@ -131,8 +136,9 @@
         <button class="view-stories-btn">View All Stories</button>
       </div>
     </section>
+
     <!---------- SUBMIT YOUR STORY FORM  ---------->
-    <section class="submit-story-section" id="submit-story">
+    <!-- <section class="submit-story-section" id="submit-story">
       <div class="submit-story-text">
         <h2>Submit Your Story</h2>
         <p>
@@ -151,16 +157,17 @@
           style="overflow: scroll" /><br />
         <input type="submit" value="Submit Your Story" />
       </form>
-    </section>
+    </section> -->
   </div>
+
   <!---------- FOOTER SECTION ---------->
   <footer class="footer-section">
     <nav class="container nav-section">
       <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="#">About Us</a>
-      <a class="nav-link" href="#">Stories</a>
+      <a class="nav-link" href="about.html">Meet the Team</a>
+      <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/">Stories</a>
       <a class="nav-link" href="#">Submit Your Story</a>
-      <a class="nav-link" href="#">Login</a>
+      <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/login">Login</a>
     </nav>
     <span>&copy; Refugee Stories 2019</span>
   </footer>
