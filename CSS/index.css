@@ -31,14 +31,14 @@
 .home .header-section .header-text {
   padding: 35px 2% 0;
 }
-.home .empathy {
+.home .quote {
   margin-top: 35px;
   padding: 35px 2% 0;
   padding-bottom: 35px;
   background-color: #CBA328;
   border-top: 3px solid black;
 }
-.home .empathy h4 {
+.home .quote h4 {
   width: 70%;
   margin: 0 auto;
   text-align: center;
@@ -501,6 +501,11 @@ img {
     border-bottom: 1px solid white;
   }
 }
+.navigation-section .nav-container .about-nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #CBA328;
+}
 .footer-section {
   width: 100%;
   height: 70px;
@@ -525,4 +530,101 @@ img {
 .footer-section .nav-section a {
   text-decoration: none;
   color: #CBA328;
+}
+.about-footer {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: #CBA328;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.4rem;
+  margin-top: 35px;
+}
+.about {
+  width: 100%;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  .about {
+    width: 90%;
+  }
+}
+.about .header-section {
+  padding-top: 35px;
+}
+.about .header-section h1 {
+  text-align: center;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .about .header-section h1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.about .header-section p {
+  text-align: center;
+}
+.about .header-section .carousel {
+  margin-top: 35px;
+}
+@media (max-width: 500px) {
+  .about .header-section .carousel {
+    display: none;
+  }
+}
+.about .header-section .header-text {
+  padding: 35px 2% 0;
+}
+.about .quote {
+  margin-top: 35px;
+  padding: 35px 2% 0;
+  padding-bottom: 35px;
+  background-color: #CBA328;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.about .quote h4 {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.about .member-container {
+  padding: 35px 2% 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .about .member-container {
+    flex-direction: column;
+  }
+}
+.about .member-container .bio-img-container {
+  width: 45%;
+  border: 1px solid lightgrey;
+}
+@media (max-width: 500px) {
+  .about .member-container .bio-img-container {
+    width: 100%;
+  }
+}
+.about .member-container .bio-img-container img {
+  width: 100%;
+  vertical-align: center;
+}
+.about .member-container .bio-text {
+  width: 45%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .about .member-container .bio-text {
+    margin-top: 35px;
+    width: 100%;
+  }
+}
+.about .member-container .bio-text p {
+  margin-top: 15px;
 }
