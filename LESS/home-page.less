@@ -2,12 +2,14 @@
 
 .home {
     width: 100%;
+    background-color: white;
 
 
     // -------------- HEADER SECTION--------------
+
     .header-section {
         //margin-top: insert mixin or variable
-        .section-top-margin();
+        padding-top: 35px;
 
         h1 {
             text-align: center;
@@ -19,15 +21,18 @@
         }
 
         .header-text {
-            .section-top-margin();
+            //.section-top-margin();
             .section-padding();
         }
 
     } 
 
+    // -------------- MAIN CONTENT SECTION--------------
+
     .who-is-a-refugee {
         .section-top-margin();
         .section-padding();
+        border-top: 3px solid black;
 
         p {
             margin-top: 15px;
@@ -35,7 +40,6 @@
     }
 
     .stories-are-important {
-        .section-top-margin();
         .section-padding();
         display: flex;
         justify-content: space-between;
@@ -43,7 +47,7 @@
 
          .stories-img-container {
             width: 45%;
-            border: 2px solid red;
+            border: 1px solid lightgrey;
 
             img {
                 width: 100%;
@@ -59,20 +63,23 @@
             }
 
         }
-
        
     }
+
+    // -------------- STORY PREVIEW SECTION--------------
 
     .story-previews {
         .section-top-margin();
         .section-padding();
+        border-top: 3px solid black;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        border: 2px solid red;
+        //border: 1px solid lightgray;
 
         .preview {
-            background-color: lightgrey;
+            background-color: #F0CA5C;
+            border-radius: 15px;
             //border: 1px solid green;
             display: flex;
             flex-direction: row;
@@ -133,9 +140,12 @@
 
     } // .story-previews section
 
+    // -------------- SUBMIT YOUR STORY FORM SECTION--------------
+
     .submit-story-section {
-        .section-top-margin();
+        //.section-top-margin(); // because above button has bottom padding
         .section-padding();
+        
 
         p {
             margin-top: 15px;
@@ -149,8 +159,8 @@
                 font-size: 1.5rem;
 
                 &:focus {
-                    background-color: rgb(151, 4, 85);
-                    color: white;
+                    background-color:black;
+                    color: @mustard;
                 }
             }
 

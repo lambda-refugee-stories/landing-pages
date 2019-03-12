@@ -5,12 +5,12 @@
 }
 
 .section-padding() {
-    padding: 0 2%;
+    padding: 35px 2% 0;
 }
 
 .custom-btn (@width: 100%) {
     width: @width;
-    background-color: rgb(151, 4, 85);
+    background-color: black;
     color: white;
     padding: 10px 2px;
     font-size: 1.4rem;
@@ -19,7 +19,8 @@
 
     &:hover {
         background-color: white;
-        color: rgb(151, 4, 85);
+        color: @deep-red;
+        border: 1px solid @deep-red;
         cursor: pointer;
     }
 }

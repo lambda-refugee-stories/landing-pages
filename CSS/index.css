@@ -1,8 +1,9 @@
 .home {
   width: 100%;
+  background-color: white;
 }
 .home .header-section {
-  margin-top: 35px;
+  padding-top: 35px;
 }
 .home .header-section h1 {
   text-align: center;
@@ -12,25 +13,24 @@
   margin-top: 35px;
 }
 .home .header-section .header-text {
-  margin-top: 35px;
-  padding: 0 2%;
+  padding: 35px 2% 0;
 }
 .home .who-is-a-refugee {
   margin-top: 35px;
-  padding: 0 2%;
+  padding: 35px 2% 0;
+  border-top: 3px solid black;
 }
 .home .who-is-a-refugee p {
   margin-top: 15px;
 }
 .home .stories-are-important {
-  margin-top: 35px;
-  padding: 0 2%;
+  padding: 35px 2% 0;
   display: flex;
   justify-content: space-between;
 }
 .home .stories-are-important .stories-img-container {
   width: 45%;
-  border: 2px solid red;
+  border: 1px solid lightgrey;
 }
 .home .stories-are-important .stories-img-container img {
   width: 100%;
@@ -44,14 +44,15 @@
 }
 .home .story-previews {
   margin-top: 35px;
-  padding: 0 2%;
+  padding: 35px 2% 0;
+  border-top: 3px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 2px solid red;
 }
 .home .story-previews .preview {
-  background-color: lightgrey;
+  background-color: #F0CA5C;
+  border-radius: 15px;
   display: flex;
   flex-direction: row;
   margin-top: 35px;
@@ -70,7 +71,7 @@
 }
 .home .story-previews .preview .preview-text .full-story-btn {
   width: 30%;
-  background-color: #970455;
+  background-color: black;
   color: white;
   padding: 10px 2px;
   font-size: 1.4rem;
@@ -80,7 +81,8 @@
 }
 .home .story-previews .preview .preview-text .full-story-btn:hover {
   background-color: white;
-  color: #970455;
+  color: #93101D;
+  border: 1px solid #93101D;
   cursor: pointer;
 }
 .home .story-previews .preview .author {
@@ -105,7 +107,7 @@
 }
 .home .story-previews .btn .view-stories-btn {
   width: 100%;
-  background-color: #970455;
+  background-color: black;
   color: white;
   padding: 10px 2px;
   font-size: 1.4rem;
@@ -114,12 +116,12 @@
 }
 .home .story-previews .btn .view-stories-btn:hover {
   background-color: white;
-  color: #970455;
+  color: #93101D;
+  border: 1px solid #93101D;
   cursor: pointer;
 }
 .home .submit-story-section {
-  margin-top: 35px;
-  padding: 0 2%;
+  padding: 35px 2% 0;
 }
 .home .submit-story-section p {
   margin-top: 15px;
@@ -132,8 +134,8 @@
   font-size: 1.5rem;
 }
 .home .submit-story-section .submit-story-form input:focus {
-  background-color: #970455;
-  color: white;
+  background-color: black;
+  color: #CBA328;
 }
 .home .submit-story-section .submit-story-form .short-line {
   width: 40%;
@@ -147,7 +149,7 @@
 .home .submit-story-section .submit-story-form input[type=submit] {
   margin-top: 15px;
   width: 20%;
-  background-color: #970455;
+  background-color: black;
   color: white;
   padding: 10px 2px;
   font-size: 1.4rem;
@@ -156,7 +158,8 @@
 }
 .home .submit-story-section .submit-story-form input[type=submit]:hover {
   background-color: white;
-  color: #970455;
+  color: #93101D;
+  border: 1px solid #93101D;
   cursor: pointer;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -297,6 +300,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: black;
+  background-color: #F9F7F1;
 }
 h1,
 h2,
@@ -304,17 +308,19 @@ h3,
 h4,
 h5 {
   font-family: 'Prata', sans-serif;
-  color: #970455;
+  color: #93101D;
 }
 h1 {
-  font-size: 3.8rem;
+  font-size: 4rem;
+  color: #230C0F;
 }
 h2 {
   font-size: 2.8rem;
 }
-h3 {
-  font-family: 'Rock Salt';
-  font-size: 2rem;
+h4 {
+  font-family: 'Rock Salt', sans-serif;
+  font-size: 1.8rem;
+  color: black;
 }
 p {
   font-size: 1.6rem;
@@ -336,7 +342,13 @@ img {
 .navigation-section {
   width: 100%;
   height: 90px;
-  background-color: lightblue;
+  background-color: black;
+}
+@media (max-width: 500px) {
+  .navigation-section {
+    background-color: white;
+    height: auto;
+  }
 }
 .navigation-section .nav-container {
   height: 100%;
@@ -344,19 +356,58 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .navigation-section .nav-container {
+    flex-direction: column;
+  }
+}
+.navigation-section .nav-container .logo-heading {
+  font-family: 'Rock Salt';
+  color: white;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .navigation-section .nav-container .logo-heading {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
 .navigation-section .nav-container .nav {
   width: 60%;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .navigation-section .nav-container .nav {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .navigation-section .nav-container .nav a {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-decoration: none;
+  color: #CBA328;
+}
+@media (max-width: 500px) {
+  .navigation-section .nav-container .nav a {
+    padding: 10px 0;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
 }
 .footer-section {
   width: 100%;
   height: 70px;
-  background-color: lightblue;
+  background-color: black;
+  color: #CBA328;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -370,10 +421,5 @@ img {
 }
 .footer-section .nav-section a {
   text-decoration: none;
+  color: #CBA328;
 }
-/* Media query example
-@mobile: ~"(max-width: 500px)";
-
-
-
-*/
