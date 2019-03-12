@@ -1,184 +1,243 @@
 // Home Content
 
 .home {
-    width: 100%;
-    background-color: white;
+  width: 100%;
+  background-color: white;
 
+  @media @mobile {
+    width: 90%;
+  }
 
-    // -------------- HEADER SECTION--------------
+  // -------------- HEADER SECTION--------------
 
-    .header-section {
-        //margin-top: insert mixin or variable
-        padding-top: 35px;
+  .header-section {
+    //margin-top: insert mixin or variable
+    padding-top: 35px;
 
-        h1 {
-            text-align: center;
-            line-height: 1.5;
-        }
+    h1 {
+      text-align: center;
+      line-height: 1.5;
 
-        .carousel {
-            .section-top-margin();
-        }
-
-        .header-text {
-            //.section-top-margin();
-            .section-padding();
-        }
-
-    } 
-
-    // -------------- MAIN CONTENT SECTION--------------
-
-    .who-is-a-refugee {
-        .section-top-margin();
-        .section-padding();
-        border-top: 3px solid black;
-
-        p {
-            margin-top: 15px;
-        }
+      @media @mobile {
+          width: 90%;
+          margin: 0 auto; //centers
+      }
     }
 
-    .stories-are-important {
-        .section-padding();
-        display: flex;
-        justify-content: space-between;
+    .carousel {
+      .section-top-margin();
+
+      @media @mobile {
+          display: none;
+      }
 
 
-         .stories-img-container {
-            width: 45%;
-            border: 1px solid lightgrey;
-
-            img {
-                width: 100%;
-                vertical-align: center;
-            }
-        }
-        
-        .stories-are-important-text {
-            width: 45%;
-
-            p {
-                margin-top: 15px;
-            }
-
-        }
-       
     }
 
-    // -------------- STORY PREVIEW SECTION--------------
+    .header-text {
+      //.section-top-margin();
+      .section-padding();
+    }
+  }
 
-    .story-previews {
-        .section-top-margin();
-        .section-padding();
-        border-top: 3px solid black;
+  // -------------- MAIN CONTENT SECTION--------------
+
+  .who-is-a-refugee {
+    .section-top-margin();
+    .section-padding();
+    border-top: 3px solid black;
+
+    p {
+      margin-top: 15px;
+    }
+  }
+
+  .stories-are-important {
+    .section-padding();
+    display: flex;
+    justify-content: space-between;
+
+    @media @mobile {
+        flex-direction: column;
+    }
+
+    .stories-img-container {
+      width: 45%;
+      border: 1px solid lightgrey;
+
+      @media @mobile {
+          width: 100%;
+
+      }
+
+      img {
+        width: 100%;
+        vertical-align: center;
+      }
+    }
+
+    .stories-are-important-text {
+      width: 45%;
+
+      @media @mobile {
+          .section-top-margin();
+          width: 100%;
+      }
+
+      p {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  // -------------- STORY PREVIEW SECTION--------------
+
+  .story-previews {
+    .section-top-margin();
+    .section-padding();
+    border-top: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    //border: 1px solid lightgray;
+
+    .preview {
+      background-color: #f0ca5c;
+      border-radius: 15px;
+      //border: 1px solid green;
+      display: flex;
+      flex-direction: row;
+      .section-top-margin();
+      padding: 2%;
+      justify-content: space-between;
+
+      @media @mobile {
+          flex-direction: column;
+      }
+
+      .preview-text {
+        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        //border: 1px solid lightgray;
+        align-items: center;
 
-        .preview {
-            background-color: #F0CA5C;
-            border-radius: 15px;
-            //border: 1px solid green;
-            display: flex;
-            flex-direction: row;
-            .section-top-margin();
-            padding: 2%;
-            justify-content: space-between;
-
-            .preview-text {
-                width: 60%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-
-                h3 {
-                    text-align: center;
-                }
-
-                .full-story-btn {
-                    .custom-btn(30%);
-                    margin-top: 15px;
-                }
-            }
-
-
-            .author {
-                width: 35%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                align-items: center;
-                //border: 1px solid brown;
-                flex-flow: wrap;
-
-                .author-img-container {
-                    width: 30%;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                p {
-                    //border: 1px solid orange;
-                    text-align: center;
-                }
-
-            }
-        }// .preview
-        
-        .btn {
-            .section-top-margin();
-            
-            .view-stories-btn {
-                .custom-btn(100%);
-            }
+        @media @mobile {
+            width: 100%;
         }
 
-    } // .story-previews section
+        h3 {
+          text-align: center;
+        }
 
-    // -------------- SUBMIT YOUR STORY FORM SECTION--------------
+        .full-story-btn {
+          .custom-btn(30%);
+          margin-top: 15px;
 
-    .submit-story-section {
-        //.section-top-margin(); // because above button has bottom padding
-        .section-padding();
-        
+        }
+      }
+
+      .author {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        //border: 1px solid brown;
+        flex-flow: wrap;
+
+        @media @mobile {
+            // width: 100%;
+            // justify-content: center;
+            // margin-top: 10px;
+            display: none;
+
+        }
+
+        .author-img-container {
+          width: 30%;
+
+          @media @mobile {
+              width: 10%;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
 
         p {
-            margin-top: 15px;
+          //border: 1px solid orange;
+          text-align: center;
         }
+      }
+    } // .preview
 
-        .submit-story-form {
-            margin-top: 15px;
-            font-size: 1.6rem;
+    .btn {
+      .section-top-margin();
 
-            input {    
-                font-size: 1.5rem;
-
-                &:focus {
-                    background-color:black;
-                    color: @mustard;
-                }
-            }
-
-            .short-line {
-                width: 40%;
-                margin: 1% 0;
-            }
-
-            .long-line {
-                width: 60%;
-                height: 100px;
-                overflow: scroll;
-            }
-
-            input[type=submit] {
-                margin-top: 15px;
-                .custom-btn(20%);
-            }
-        }
+      .view-stories-btn {
+        .custom-btn(100%);
+      }
     }
+  } // .story-previews section
+
+  // -------------- SUBMIT YOUR STORY FORM SECTION--------------
+
+  .submit-story-section {
+    //.section-top-margin(); // because above button has bottom padding
+    .section-padding();
+
+    p {
+      margin-top: 15px;
+    }
+
+    .submit-story-form {
+      margin-top: 15px;
+      font-size: 1.6rem;
+
+      @media @mobile {
+          width: 90%;
+          margin: 10px auto 0;
+      }
+
+      input {
+        font-size: 1.5rem;
+
+        &:focus {
+          background-color: black;
+          color: @mustard;
+        }
+      }
+
+      .short-line {
+        width: 40%;
+        margin: 1% 0;
+
+        @media @mobile {
+            width: 90%;
+        
+        }
+      }
+
+      .long-line {
+        width: 60%;
+        height: 100px;
+        overflow: scroll;
+
+        @media @mobile {
+            width: 90%;
+        }
+      }
+
+      input[type="submit"] {
+        margin-top: 15px;
+        .custom-btn(20%);
+
+        @media @mobile {
+            .custom-btn(90%);
+        }
+      }
+    }
+  }
 }
