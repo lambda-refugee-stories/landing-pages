@@ -3,24 +3,182 @@
 .navigation-section {
     width: 100%;
     height: 90px;
-    background-color: lightblue;
+    background-color: @nav-bg;
+
+
+    @media @tablet {
+        height: 140px;
+    }
+    
+    @media @mobile {
+        //background-color: white;
+        height: auto;
+    }
+
 
     .nav-container {
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 50px;
+
+
+        @media @tablet {
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        @media @mobile {
+            flex-direction: column;
+            padding: 0; //border line runs fullscreen 
+        }
+
+        .logo-heading {
+            font-family: 'Rock Salt';
+            color: white;
+            font-size: 2rem;
+
+            @media @tablet {
+                padding: 5px;
+            }
+
+            @media @mobile {
+                width: 100%;
+                background-color: black;
+                color: white;
+                border-bottom: 1px solid white;
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
 
         .nav {
-            width: 60%;
+            width: 75%;
             display: flex;
             justify-content: space-between;
 
+            @media @tablet {
+                width: 100%;
+                justify-content: space-evenly;
+            }
+
+            @media @mobile {
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
             a {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
                 text-decoration: none;
+                color: @mustard;
+
+                @media @mobile {
+                    padding: 10px 0;
+                    width: 100%;
+                    font-size: 2rem;
+                    text-align: center;
+                    background-color: black;
+                    border-bottom: 1px solid white;
+                }
             }
 
         }
+
+    
+    }
+}
+
+// About Page Navigation
+
+.about-navigation-section {
+    width: 100%;
+    height: 90px;
+    background-color: @nav-bg;
+    //border: 1px solid red;
+
+
+    @media @tablet {
+        height: 140px;
+    }
+    
+    @media @mobile {
+        height: auto;
+    }
+
+
+    .nav-container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+
+
+        @media @tablet {
+            justify-content: space-evenly;
+            flex-direction: column;
+            height: 100%;
+        }
+        @media @mobile {
+            height: 100%;
+            padding: 0; //border line runs fullscreen
+
+        }
+
+        .logo-heading {
+            font-family: 'Rock Salt';
+            color: white;
+            font-size: 2rem;
+
+            @media @tablet {
+                padding: 5px;
+            }
+
+            @media @mobile {
+                width: 100%;
+                background-color: black;
+                color: white;
+                border-bottom: 1px solid white;
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
+
+        .about-nav {
+            display: flex;
+            justify-content: space-between;
+
+            @media @tablet {
+                width: 100%;
+                justify-content: space-evenly;
+            }
+
+            @media @mobile {
+                width: 100%;
+                //flex-direction: column;
+                //justify-content: center;
+                //align-items: center;
+                //don't need because only one item in nav compared to home-page nav
+            }
+
+            a {
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: @mustard;
+
+                @media @mobile {
+                    padding: 10px 0;
+                    width: 100%;
+                    font-size: 2rem;
+                    text-align: center;
+                    background-color: black;
+                    border-bottom: 1px solid white; //don't need these because only one nav item
+                }
+            }
+
+        }
+    
     }
 }

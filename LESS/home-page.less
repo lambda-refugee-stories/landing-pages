@@ -1,43 +1,283 @@
 // Home Content
 
 .home {
-    width: 100%;
+  width: 100%;
+  background-color: white;
 
+  @media @tablet {
+      width: 90%;
+      padding: 20px;
+  }
+  @media @mobile {
+    width: 90%;
+    padding: 20px;
+  }
 
-    // -------------- HEADER SECTION--------------
-    .header-section {
-        //margin-top: insert mixin or variable
+  // -------------- HEADER SECTION--------------
+
+  .header-section {
+    padding-top: 35px;
+
+    h1 {
+      text-align: center;
+      line-height: 1.5;
+
+      @media @mobile {
+          width: 90%;
+          margin: 0 auto; //centers
+      }
+    }
+    
+
+    .header-text {
+      //.section-top-margin();
+      .section-padding();
+    }
+  }
+// -------------- QUOTE  SECTION--------------
+
+.quote {
+    .section-top-margin();
+    .section-padding();
+    padding-bottom: 35px;
+    background-color: @mustard;
+    border-top: 3px solid black;
+
+    h4 {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+  
+// -------------- MAIN CONTENT SECTION--------------
+
+  .who-is-a-refugee {
+    //.section-top-margin(); // because empathy section has bottom padding
+    .section-padding();
+    border-top: 3px solid black;
+
+    p {
+      margin-top: 15px;
+    }
+  }
+
+  .stories-are-important {
+    .section-padding();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media @tablet {
+        flex-direction: column;
+    }
+    
+    //redundant
+    @media @mobile {
+        flex-direction: column;
+    }
+
+    .stories-img-container {
+      width: 40%;
+      //border: 1px solid lightgrey;
+
+      @media @tablet {
+        width: 100%;
+    }
+
+      //redundant
+      @media @mobile {
+          width: 100%;
+
+      }
+
+      img {
+        width: 100%;
+        margin-top: 50px;
+
+        @media @tablet {
+            margin-top: 0;
+        }
+        //redundant
+        @media @mobile {
+            margin-top: 0;
+        }
+      }
+    }
+
+    .stories-are-important-text {
+      width: 55%;
+
+      @media @tablet {
         .section-top-margin();
+        width: 100%;
+    }
+      //redundant
+      @media @mobile {
+          .section-top-margin();
+          width: 100%;
+      }
 
-        h1 {
-            text-align: center;
-            line-height: 1.5;
+      p {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  // -------------- STORY PREVIEW SECTION--------------
+
+  .story-previews {
+    .section-top-margin();
+    .section-padding();
+    border-top: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    //border: 1px solid lightgray;
+
+    .preview {
+      background-color: @mustard;
+      border-radius: 15px;
+      //border: 1px solid green;
+      display: flex;
+      flex-direction: row;
+      .section-top-margin();
+      padding: 2%;
+      justify-content: space-between;
+
+      @media @mobile {
+          flex-direction: column;
+      }
+
+      .preview-text {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+
+        @media @mobile {
+            width: 100%;
         }
 
-        .carousel {
-            .section-top-margin();
+        h3 {
+          text-align: center;
         }
 
-        .header-text {
-            .section-top-margin();
-            padding: 0 2%;
+        .full-story-btn {
+          .custom-btn(30%);
+          margin-top: 15px;
+
+        }
+      }
+
+      .author {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        //border: 1px solid brown;
+        flex-flow: wrap;
+
+        @media @mobile {
+            // width: 100%;
+            // justify-content: center;
+            // margin-top: 10px;
+            display: none;
+
         }
 
-    } 
+        .author-img-container {
+          width: 30%;
 
-    .who-is-a-refugee {
-        .section-top-margin();
+          @media @mobile {
+              width: 10%;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+
+        p {
+          //border: 1px solid orange;
+          text-align: center;
+        }
+      }
+    } // .preview
+
+    .btn {
+      .section-top-margin();
+
+      .view-stories-btn {
+        .custom-btn(100%);
+      }
+    }
+  } // .story-previews section
+
+  // -------------- SUBMIT YOUR STORY FORM SECTION--------------
+
+  /*
+  .submit-story-section {
+    //.section-top-margin(); // because above button has bottom padding
+    .section-padding();
+
+    p {
+      margin-top: 15px;
     }
 
-    .stories-are-important {
-        .section-top-margin();
-    }
+    .submit-story-form {
+      margin-top: 15px;
+      font-size: 1.6rem;
 
-    .story-previews {
-        .section-top-margin();
-    }
+      @media @mobile {
+          width: 90%;
+          margin: 10px auto 0;
+      }
 
-    .submit-story-section {
-        .section-top-margin();
+      input {
+        font-size: 1.5rem;
+
+        &:focus {
+          background-color: black;
+          color: @mustard;
+        }
+      }
+
+      .short-line {
+        width: 40%;
+        margin: 1% 0;
+
+        @media @mobile {
+            width: 90%;
+        
+        }
+      }
+
+      .long-line {
+        width: 60%;
+        height: 100px;
+        overflow: scroll;
+
+        @media @mobile {
+            width: 90%;
+        }
+      }
+
+      input[type="submit"] {
+        margin-top: 15px;
+        .custom-btn(20%);
+
+        @media @mobile {
+            .custom-btn(90%);
+        }
+      }
     }
+  } // submit your story form
+
+  */
+
+  
 }
