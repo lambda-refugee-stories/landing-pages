@@ -11,7 +11,17 @@
     height: 500px;
     position: relative;
     overflow: hidden;
-    //border: 3px solid red;
+    border: 5px solid black;
+
+    @media @tablet {
+        border: none;
+        height: 400px;
+    }
+
+    @media @mobile {
+        border: none;
+        height: 300px;
+    }
 
 
     .left-button, .right-button {
@@ -39,23 +49,22 @@
         top: 50%;
         left: 25px;
         transform: translate(0, -50%);
-        z-index: 1;
+        z-index: 1; //brings to front
     }
 
     .right-button {
         top: 50%;
         right: 25px;
         transform: translate(0, -50%);
-        z-index: 1;
+        z-index: 1; //brings to front
     }
 
     img {
         width: 100%;
         display: none;
         position: absolute;
+        opacity: 1;
+        transition: visibility 10s, opacity 5s linear;
     }
-
-
-      
 
 }

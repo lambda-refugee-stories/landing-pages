@@ -16,6 +16,9 @@
         display: flex;
         justify-content: space-between;
 
+        @media @tablet {
+            width: 90%
+        }
         @media @mobile {
             width: 90%;
         }
@@ -40,4 +43,21 @@
     align-items: center;
     font-size: 1.4rem;
     .section-top-margin();
+
+    @media @tablet {
+        //max-width: 500px;
+        justify-content: space-evenly;
+    }
+
+    .nav-section {
+        @media @tablet {
+            justify-content: center;
+            //border: 2px solid red;
+        }
+
+        a {
+            text-decoration: none;
+            color: @mustard;
+        }
+    }
 }
