@@ -53,6 +53,7 @@
 .home .stories-are-important {
   padding: 35px 2% 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
@@ -61,8 +62,7 @@
   }
 }
 .home .stories-are-important .stories-img-container {
-  width: 45%;
-  border: 1px solid lightgrey;
+  width: 40%;
 }
 @media (max-width: 500px) {
   .home .stories-are-important .stories-img-container {
@@ -71,10 +71,9 @@
 }
 .home .stories-are-important .stories-img-container img {
   width: 100%;
-  vertical-align: center;
 }
 .home .stories-are-important .stories-are-important-text {
-  width: 45%;
+  width: 55%;
 }
 @media (max-width: 500px) {
   .home .stories-are-important .stories-are-important-text {

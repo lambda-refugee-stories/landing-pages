@@ -70,6 +70,7 @@
   .stories-are-important {
     .section-padding();
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     @media @mobile {
@@ -77,8 +78,8 @@
     }
 
     .stories-img-container {
-      width: 45%;
-      border: 1px solid lightgrey;
+      width: 40%;
+      //border: 1px solid lightgrey;
 
       @media @mobile {
           width: 100%;
@@ -87,12 +88,13 @@
 
       img {
         width: 100%;
-        vertical-align: center;
+        //margin-top: 100px;
+        //vertical-align: center;
       }
     }
 
     .stories-are-important-text {
-      width: 45%;
+      width: 55%;
 
       @media @mobile {
           .section-top-margin();
