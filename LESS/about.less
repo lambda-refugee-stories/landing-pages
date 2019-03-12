@@ -80,7 +80,9 @@
         width: 45%;
   
         @media @mobile {
+            .section-top-margin();
             width: 100%;
+            //order: -1;
   
         }
   
@@ -96,8 +98,8 @@
         text-align: center;
   
         @media @mobile {
-            .section-top-margin();
             width: 100%;
+            order: -1; // pushes texts on top of photo always
         }
 
         p {

@@ -737,6 +737,7 @@ img {
 }
 @media (max-width: 500px) {
   .about .member-container .bio-img-container {
+    margin-top: 35px;
     width: 100%;
   }
 }
@@ -751,8 +752,8 @@ img {
 }
 @media (max-width: 500px) {
   .about .member-container .bio-text {
-    margin-top: 35px;
     width: 100%;
+    order: -1;
   }
 }
 .about .member-container .bio-text p {
