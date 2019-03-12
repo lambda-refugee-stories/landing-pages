@@ -39,11 +39,26 @@
       .section-padding();
     }
   }
+// -------------- MAIN CONTENT SECTION--------------
 
-  // -------------- MAIN CONTENT SECTION--------------
+.empathy {
+    .section-top-margin();
+    .section-padding();
+    padding-bottom: 35px;
+    background-color: @mustard;
+    border-top: 3px solid black;
+
+    h4 {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+  
+// -------------- MAIN CONTENT SECTION--------------
 
   .who-is-a-refugee {
-    .section-top-margin();
+    //.section-top-margin(); // because empathy section has bottom padding
     .section-padding();
     border-top: 3px solid black;
 
@@ -102,7 +117,7 @@
     //border: 1px solid lightgray;
 
     .preview {
-      background-color: #f0ca5c;
+      background-color: @mustard;
       border-radius: 15px;
       //border: 1px solid green;
       display: flex;

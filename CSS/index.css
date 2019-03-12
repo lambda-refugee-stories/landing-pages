@@ -31,8 +31,19 @@
 .home .header-section .header-text {
   padding: 35px 2% 0;
 }
-.home .who-is-a-refugee {
+.home .empathy {
   margin-top: 35px;
+  padding: 35px 2% 0;
+  padding-bottom: 35px;
+  background-color: #CBA328;
+  border-top: 3px solid black;
+}
+.home .empathy h4 {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.home .who-is-a-refugee {
   padding: 35px 2% 0;
   border-top: 3px solid black;
 }
@@ -83,7 +94,7 @@
   justify-content: space-evenly;
 }
 .home .story-previews .preview {
-  background-color: #f0ca5c;
+  background-color: #CBA328;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
@@ -406,6 +417,7 @@ h4 {
   font-family: 'Rock Salt', sans-serif;
   font-size: 1.8rem;
   color: black;
+  line-height: 2;
 }
 p {
   font-size: 1.6rem;
