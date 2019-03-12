@@ -142,17 +142,6 @@
 }
 .home .stories-are-important .stories-img-container img {
   width: 100%;
-  margin-top: 50px;
-}
-@media (max-width: 800px) {
-  .home .stories-are-important .stories-img-container img {
-    margin-top: 0;
-  }
-}
-@media (max-width: 500px) {
-  .home .stories-are-important .stories-img-container img {
-    margin-top: 0;
-  }
 }
 .home .stories-are-important .stories-are-important-text {
   width: 55%;
@@ -745,7 +734,6 @@ img {
 }
 .about .member-container .bio-img-container {
   width: 45%;
-  border: 1px solid lightgrey;
 }
 @media (max-width: 500px) {
   .about .member-container .bio-img-container {
@@ -755,6 +743,7 @@ img {
 .about .member-container .bio-img-container img {
   width: 100%;
   vertical-align: center;
+  border-radius: 15px;
 }
 .about .member-container .bio-text {
   width: 45%;
