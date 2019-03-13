@@ -1,50 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width = device-width, initial-scale = 1" />
-  <title>Refugee Stories - Home</title>
-  <link href="CSS/index.css" rel="stylesheet" />
-  <script src="JS/index.js" async></script>
-  <script src="JS/carousel.js" async></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <title>Refugee Stories - Home</title>
+    <link href="CSS/index.css" rel="stylesheet" />
+    <script src="JS/index.js" async></script>
+    <script src="JS/carousel.js" async></script>
+    <script src="JS/mobile-menu.js" async></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script> -->
-  <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Rock Salt" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
-  
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Prata"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rock Salt"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <!---------- NAVIGATION SECTION ---------->
-  <section class="navigation-section">
-    <div class="container nav-container">
-      <p class="logo-heading">Refugee<br> Stories</p>
-      <nav class="nav">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About Us</a>
-        <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/">Stories</a>
-        <a class="nav-link" href="#">Submit Your Story</a>
-        <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/login">Login</a>
-      </nav>
+  <body>
+    <!---------- NAVIGATION SECTION ---------->
+    <section class="navigation-section">
+      <div class="container nav-container">
+        <p class="logo-heading">
+          Refugee<br />
+          Stories
+        </p>
+        <nav class="nav">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About Us</a>
+          <a
+            class="nav-link"
+            href="https://refugee-stories-frontend.netlify.com/"
+            >Stories</a
+          >
+          <a class="nav-link" href="#">Submit Your Story</a>
+          <a
+            class="nav-link"
+            href="https://refugee-stories-frontend.netlify.com/login"
+            >Login</a
+          >
+        </nav>
+      </div>
+    </section>
+
+    <!--- MOBILE NAVIGATION MENU VERSION  --->
+    <div class="mobile-only">
+      <div class="mobile-header">
+        <img class="menu-button" src="Images/menu.png" />
+        <h4>Refugee Stories</h4>
+      </div>
+      <div class="menu">
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a
+            href="https://refugee-stories-frontend.netlify.com/"
+            >Stories</a
+          >
+          <a href="#">Submit Your Story</a>
+          <a  
+            href="https://refugee-stories-frontend.netlify.com/login"
+            >Login</a
+          >
+        </nav>
+      </div>
     </div>
-  </section>
 
-  <div class="container home">
+    <!---------- HOME CONTAINER SECTION ---------->
+    <div class="container home">
+      <!---------- HEADER SECTION ---------->
+      <header class="header-section">
+        <h1>
+          Stories of the
+          <span style="font-family:'Rock Salt'; color: #93101D">Refugee</span
+          >:<br />
+          The Cries and the Crisis
+        </h1>
 
+        <!---------- CAROUSEL COMPONENT ---------->
 
-    <!---------- HEADER SECTION ---------->
-    <header class="header-section">
-      <h1>
-        Stories of the
-        <span style="font-family:'Rock Salt'; color: #93101D">Refugee</span>:<br />
-        The Cries and the Crisis
-      </h1>
-
-
-      <!---------- CAROUSEL COMPONENT ---------->
-      
         <div class="carousel">
           <div class="left-button"><</div>
           <img class="carouselImage" src="Images/umbrella.jpeg" />
@@ -52,97 +93,118 @@
           <img class="carouselImage" src="Images/mother-and-baby.jpeg" />
           <div class="right-button">></div>
         </div>
-         
-      <p class="header-text">
-        There are more people displaced in the world today than at any time since the end of World War II and it is more
-        important than ever to help people develop empathy for each other. Refugee Stories promotes awareness of the
-        refugee crisis, and creates a platform for refugees to share their experiences through story submissions. People visiting the site will
-        gain a better understanding of the refugee crisis and what it means to be a refugee.
-      </p>
 
-    </header>
-
-    <!---------- QUOTE SECTION ---------->
-    <section class="quote">
-      <h4>“Empathy may be the single most important quality that must be nurtured to give peace a fighting chance.”
-        <br>– Arundhati Ray</h4>
-    </section>
-
-
-    <!---------- MAIN CONTENT SECTION ---------->
-    <section class="who-is-a-refugee">
-      <h2>Who is a <span style="font-family:'Rock Salt'">Refugee</span>?</h2>
-      <p>
-        According to the United Nations Refugee Agency, refugees are people who have fled war, violence, conflict or persecution and have crossed an international border to find safety in another country.
-      </p>
-    </section>
-
-    
-    <section class="stories-are-important">
-      <div class="stories-img-container">
-        <img src="Images/wasteland.jpeg" alt="Picture of refugee family" />
-      </div>
-      <div class="stories-are-important-text">
-        <h2>Why are their <span style="font-family:'Rock Salt'">stories</span> important?</h2>
-        <p>
-          We often hear about the political motives of war through televised events, social media hashtags, and other modes of media. However, seldom do people around the world get to learn about the psychological, social, and personal impacts that these events have on the people who are most directly affected and likely forgotten. It is important for stories of refugees to be shared in order for the world to become more aware of the perils these victims and survivors of political turmoil face. Hopefully, with more empathy can come better decision-making and avenues for peace.
+        <p class="header-text">
+          There are more people displaced in the world today than at any time
+          since the end of World War II and it is more important than ever to
+          help people develop empathy for each other. Refugee Stories promotes
+          awareness of the refugee crisis, and creates a platform for refugees
+          to share their experiences through story submissions. People visiting
+          the site will gain a better understanding of the refugee crisis and
+          what it means to be a refugee.
         </p>
-      </div>
+      </header>
 
-    </section>
+      <!---------- QUOTE SECTION ---------->
+      <section class="quote">
+        <h4>
+          “Empathy may be the single most important quality that must be
+          nurtured to give peace a fighting chance.” <br />– Arundhati Ray
+        </h4>
+      </section>
 
-    <!---------- STORY PREVIEW SECTION --------->
-    <section class="story-previews">
-      <h2>Featured <span style="font-family:'Rock Salt'">Stories</span></h2>
-      
-      <div class="preview">
-        <div class="preview-text">
-          <p>Home Away From Home</p>
-          <h4 class="headline">“I heard people screaming, and water crashing. I felt like I was going to drown.”</h4>
-          <button class="full-story-btn">Read full story </button>
+      <!---------- MAIN CONTENT SECTION ---------->
+      <section class="who-is-a-refugee">
+        <h2>Who is a <span style="font-family:'Rock Salt'">Refugee</span>?</h2>
+        <p>
+          According to the United Nations Refugee Agency, refugees are people
+          who have fled war, violence, conflict or persecution and have crossed
+          an international border to find safety in another country.
+        </p>
+      </section>
+
+      <section class="stories-are-important">
+        <div class="stories-img-container">
+          <img src="Images/wasteland.jpeg" alt="Picture of refugee family" />
         </div>
-        <div class="author">
-          <div class="author-img-container">
-            <img src="Images/cristian.jpeg" alt="Picture of author" />
+        <div class="stories-are-important-text">
+          <h2>
+            Why are their
+            <span style="font-family:'Rock Salt'">stories</span> important?
+          </h2>
+          <p>
+            We often hear about the political motives of war through televised
+            events, social media hashtags, and other modes of media. However,
+            seldom do people around the world get to learn about the
+            psychological, social, and personal impacts that these events have
+            on the people who are most directly affected and likely forgotten.
+            It is important for stories of refugees to be shared in order for
+            the world to become more aware of the perils these victims and
+            survivors of political turmoil face. Hopefully, with more empathy
+            can come better decision-making and avenues for peace.
+          </p>
+        </div>
+      </section>
+
+      <!---------- STORY PREVIEW SECTION --------->
+      <section class="story-previews">
+        <h2>Featured <span style="font-family:'Rock Salt'">Stories</span></h2>
+
+        <div class="preview">
+          <div class="preview-text">
+            <p>Home Away From Home</p>
+            <h4 class="headline">
+              “I heard people screaming, and water crashing. I felt like I was
+              going to drown.”
+            </h4>
+            <button class="full-story-btn">Read full story</button>
           </div>
-          <p>By: John Lorane</p>
-        </div>
-      </div>
-
-      <div class="preview">
-        <div class="preview-text">
-          <p>Surviving the Storm</p>
-          <h4 class="headline">“We will never reach the shore. We will all sink.”</h4>
-          <button class="full-story-btn">Read full story </button>
-        </div>
-        <div class="author">
-          <div class="author-img-container">
-            <img src="Images/penny.jpeg" alt="Picture of author" />
+          <div class="author">
+            <div class="author-img-container">
+              <img src="Images/cristian.jpeg" alt="Picture of author" />
+            </div>
+            <p>By: John Lorane</p>
           </div>
-          <p>By: Jane Zunish</p>
         </div>
-      </div>
 
-      <div class="preview">
-        <div class="preview-text">
-          <p>In a Blink of an Eye</p>
-          <h4 class="headline">“Please take the baby,” he said. “I am very tired.”</h4>
-          <button class="full-story-btn">Read full story </button>
-        </div>
-        <div class="author">
-          <div class="author-img-container">
-            <img src="Images/andre.jpeg" alt="Picture of author" />
+        <div class="preview">
+          <div class="preview-text">
+            <p>Surviving the Storm</p>
+            <h4 class="headline">
+              “We will never reach the shore. We will all sink.”
+            </h4>
+            <button class="full-story-btn">Read full story</button>
           </div>
-          <p>By: Arthur Torle</p>
+          <div class="author">
+            <div class="author-img-container">
+              <img src="Images/penny.jpeg" alt="Picture of author" />
+            </div>
+            <p>By: Jane Zunish</p>
+          </div>
         </div>
-      </div>
-      <div class="btn">
-        <button class="view-stories-btn">View All Stories</button>
-      </div>
-    </section>
 
-    <!---------- SUBMIT YOUR STORY FORM  ---------->
-    <!-- <section class="submit-story-section" id="submit-story">
+        <div class="preview">
+          <div class="preview-text">
+            <p>In a Blink of an Eye</p>
+            <h4 class="headline">
+              “Please take the baby,” he said. “I am very tired.”
+            </h4>
+            <button class="full-story-btn">Read full story</button>
+          </div>
+          <div class="author">
+            <div class="author-img-container">
+              <img src="Images/andre.jpeg" alt="Picture of author" />
+            </div>
+            <p>By: Arthur Torle</p>
+          </div>
+        </div>
+        <div class="btn">
+          <button class="view-stories-btn">View All Stories</button>
+        </div>
+      </section>
+
+      <!---------- SUBMIT YOUR STORY FORM  ---------->
+      <!-- <section class="submit-story-section" id="submit-story">
       <div class="submit-story-text">
         <h2>Submit Your Story</h2>
         <p>
@@ -162,32 +224,25 @@
         <input type="submit" value="Submit Your Story" />
       </form>
     </section> -->
-  </div>
+    </div>
 
-  <!---------- FOOTER SECTION ---------->
-  <footer class="footer-section">
-    <nav class="container nav-section">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="about.html">About Us</a>
-      <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/">Stories</a>
-      <a class="nav-link" href="#">Submit Your Story</a>
-      <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/login">Login</a>
-    </nav>
-    <span>&copy; Refugee Stories 2019</span>
-  </footer>
-
-</body>
-
+    <!---------- FOOTER SECTION ---------->
+    <footer class="footer-section">
+      <nav class="container nav-section">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/"
+          >Stories</a
+        >
+        <a class="nav-link" href="#">Submit Your Story</a>
+        <a
+          class="nav-link"
+          href="https://refugee-stories-frontend.netlify.com/login"
+          >Login</a
+        >
+      </nav>
+      <span>&copy; Refugee Stories 2019</span>
+    </footer>
+  </body>
 </html>
 
-<!-- From Applied JS Sprint Authors
-  <div class="card" data-tab="javascript">
-      <div class="headline">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
-      <div class="author">
-        <div class="img-container">
-          <img src="./assets/sir.jpg" />
-        </div>
-        <span>By SIR RUFF'N'STUFF</span>
-      </div>
-    </div>
--->
