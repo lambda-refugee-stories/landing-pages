@@ -81,8 +81,22 @@
     width: 100%;
   }
 }
-.home .stories-are-important .stories-img-container img {
+.home .stories-are-important .stories-img-container .long-wasteland {
   width: 100%;
+}
+@media (max-width: 800px) {
+  .home .stories-are-important .stories-img-container .long-wasteland {
+    display: none;
+  }
+}
+.home .stories-are-important .stories-img-container .wide-wasteland {
+  display: none;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .home .stories-are-important .stories-img-container .wide-wasteland {
+    display: block;
+  }
 }
 .home .stories-are-important .stories-are-important-text {
   width: 55%;
@@ -148,6 +162,7 @@
   font-size: 1.4rem;
   border: 1px solid grey;
   border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
   margin-top: 15px;
 }
 .home .story-previews .preview .preview-text .full-story-btn:hover {
@@ -194,6 +209,7 @@
   font-size: 1.4rem;
   border: 1px solid grey;
   border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
 }
 .home .story-previews .btn .view-stories-btn:hover {
   background-color: white;
@@ -496,6 +512,7 @@ img {
   width: 75%;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   /* refer to mobile-menu.less
             @media @mobile {
                 width: 100%;
@@ -525,6 +542,25 @@ img {
                     border-bottom: 1px solid white;
                 }
                 */
+}
+.navigation-section .nav-container .nav a .login {
+  width: 100px;
+  background-color: black;
+  color: white;
+  padding: 10px 2px;
+  font-size: 1.4rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #CBA328;
+  color: black;
+  font-size: 1.6rem;
+}
+.navigation-section .nav-container .nav a .login:hover {
+  background-color: white;
+  color: #93101D;
+  border: 1px solid #93101D;
+  cursor: pointer;
 }
 .about-navigation-section {
   width: 100%;
@@ -626,6 +662,7 @@ img {
 .footer-section .nav-section {
   display: flex;
   justify-content: space-between;
+  padding: 0 5%;
 }
 @media (max-width: 800px) {
   .footer-section .nav-section {
