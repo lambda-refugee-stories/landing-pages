@@ -198,6 +198,9 @@
 .home .story-previews .preview .author p {
   text-align: center;
 }
+.home .story-previews .article-open {
+  height: 400px;
+}
 .home .story-previews .btn {
   margin-top: 35px;
 }
