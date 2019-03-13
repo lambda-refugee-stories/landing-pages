@@ -8,7 +8,7 @@
         width: 90%;
         padding: 20px;
     }
-    
+
     @media @mobile {
       width: 90%;
     }
@@ -78,16 +78,18 @@
   
       .bio-img-container {
         width: 45%;
-        border: 1px solid lightgrey;
   
         @media @mobile {
+            .section-top-margin();
             width: 100%;
+            //order: -1;
   
         }
   
         img {
           width: 100%;
           vertical-align: center;
+          border-radius: 15px;
         }
       }
   
@@ -96,8 +98,8 @@
         text-align: center;
   
         @media @mobile {
-            .section-top-margin();
             width: 100%;
+            order: -1; // pushes texts on top of photo always
         }
 
         p {

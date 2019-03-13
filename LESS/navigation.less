@@ -10,10 +10,12 @@
         height: 140px;
     }
     
+    
     @media @mobile {
-        //background-color: white;
-        height: auto;
+        display: none; // mobile navigation for homepage located in mobile-menu.less
+        //height: auto;
     }
+    
 
 
     .nav-container {
@@ -28,10 +30,13 @@
             justify-content: space-evenly;
             flex-direction: column;
         }
+
+        /* refer to mobile-menu.less
         @media @mobile {
             flex-direction: column;
             padding: 0; //border line runs fullscreen 
         }
+        */
 
         .logo-heading {
             font-family: 'Rock Salt';
@@ -42,6 +47,7 @@
                 padding: 5px;
             }
 
+            /* refer to mobile-menu.less
             @media @mobile {
                 width: 100%;
                 background-color: black;
@@ -50,6 +56,7 @@
                 text-align: center;
                 padding: 10px 0;
             }
+            */
         }
 
         .nav {
@@ -62,18 +69,21 @@
                 justify-content: space-evenly;
             }
 
+            /* refer to mobile-menu.less
             @media @mobile {
                 width: 100%;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
             }
+            */
 
             a {
                 font-size: 1.5rem;
                 text-decoration: none;
                 color: @mustard;
 
+                /* refer to mobile-menu.less
                 @media @mobile {
                     padding: 10px 0;
                     width: 100%;
@@ -82,13 +92,15 @@
                     background-color: black;
                     border-bottom: 1px solid white;
                 }
+                */
             }
 
         }
-
     
     }
 }
+
+
 
 // About Page Navigation
 
