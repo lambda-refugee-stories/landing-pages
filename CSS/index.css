@@ -201,7 +201,12 @@
 .home .story-previews .btn {
   margin-top: 35px;
 }
-.home .story-previews .btn .view-stories-btn {
+.home .story-previews .btn a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+.home .story-previews .btn a .view-stories-btn {
   width: 100%;
   background-color: black;
   color: white;
@@ -210,8 +215,9 @@
   border: 1px solid grey;
   border-radius: 5px;
   font-family: 'Ubuntu', sans-serif;
+  z-index: 1;
 }
-.home .story-previews .btn .view-stories-btn:hover {
+.home .story-previews .btn a .view-stories-btn:hover {
   background-color: white;
   color: #93101D;
   border: 1px solid #93101D;
