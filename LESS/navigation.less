@@ -12,7 +12,9 @@
     
     
     @media @mobile {
-        display: none; // mobile navigation for homepage located in mobile-menu.less
+        display: none; 
+        // display: none because mobile navigation for homepage 
+        // is located in mobile-menu.less
         //height: auto;
     }
     
@@ -38,7 +40,7 @@
         }
         */
 
-        // For Text Version of Logo
+        // Use for Text Version of Logo
         // .logo-heading {
         //     font-family: 'Rock Salt';
         //     color: white;
@@ -125,13 +127,12 @@
 
 
 
-// About Page Navigation
+// ------------- About Page Navigation ---------------
 
 .about-navigation-section {
     width: 100%;
     height: 90px;
     background-color: @nav-bg;
-    //border: 1px solid red;
 
 
     @media @tablet {
@@ -191,7 +192,6 @@
             @media @tablet {
                 width: 80px;
                 padding: 5px;
-                //border: 2px solid red;
             }
         }
 
@@ -206,10 +206,6 @@
 
             @media @mobile {
                 width: 100%;
-                //flex-direction: column;
-                //justify-content: center;
-                //align-items: center;
-                //don't need because only one item in nav compared to home-page nav
             }
 
             a {
@@ -223,7 +219,7 @@
                     font-size: 2rem;
                     text-align: center;
                     background-color: black;
-                    border-bottom: 1px solid white; //don't need these because only one nav item
+                    border-bottom: 1px solid white;
                 }
             }
 
