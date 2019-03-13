@@ -13,7 +13,7 @@ class Preview {
         // arrow method alternative: 
         //this.fullStoryBtn.addEventListener('click', () => this.expandStory());
     }
-    
+
     expandStory() {
         this.element.classList.toggle('article-open');
 
@@ -31,9 +31,9 @@ class Preview {
 
 let previews = document.querySelectorAll('.preview');
 
-previews.forEach( function(preview){
+previews.forEach(function (preview) {
     // checking to see that all previews are being accessed
-    console.log(preview); 
+    console.log(preview);
 
     // return newly constructed DOM element
     return new Preview(preview);

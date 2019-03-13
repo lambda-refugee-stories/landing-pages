@@ -12,7 +12,9 @@
     
     
     @media @mobile {
-        display: none; // mobile navigation for homepage located in mobile-menu.less
+        display: none; 
+        // display: none because mobile navigation for homepage 
+        // is located in mobile-menu.less
         //height: auto;
     }
     
@@ -38,25 +40,40 @@
         }
         */
 
-        .logo-heading {
-            font-family: 'Rock Salt';
-            color: white;
-            font-size: 2rem;
+        // Use for Text Version of Logo
+        // .logo-heading {
+        //     font-family: 'Rock Salt';
+        //     color: white;
+        //     font-size: 2rem;
+
+        //     @media @tablet {
+        //         padding: 5px;
+        //     }
+
+        //     /* refer to mobile-menu.less
+        //     @media @mobile {
+        //         width: 100%;
+        //         background-color: black;
+        //         color: white;
+        //         border-bottom: 1px solid white;
+        //         text-align: center;
+        //         padding: 10px 0;
+        //     }
+        //     */
+        // }
+
+        .nav-logo {
+            width: 10%;
+
+            img {
+                width: 100%;
+            }
 
             @media @tablet {
+                width: 80px;
                 padding: 5px;
+                //border: 2px solid red;
             }
-
-            /* refer to mobile-menu.less
-            @media @mobile {
-                width: 100%;
-                background-color: black;
-                color: white;
-                border-bottom: 1px solid white;
-                text-align: center;
-                padding: 10px 0;
-            }
-            */
         }
 
         .nav {
@@ -110,13 +127,12 @@
 
 
 
-// About Page Navigation
+// ------------- About Page Navigation ---------------
 
 .about-navigation-section {
     width: 100%;
     height: 90px;
     background-color: @nav-bg;
-    //border: 1px solid red;
 
 
     @media @tablet {
@@ -166,6 +182,19 @@
             }
         }
 
+        .about-nav-logo {
+            width: 10%;
+
+            img {
+                width: 100%;
+            }
+
+            @media @tablet {
+                width: 80px;
+                padding: 5px;
+            }
+        }
+
         .about-nav {
             display: flex;
             justify-content: space-between;
@@ -177,10 +206,6 @@
 
             @media @mobile {
                 width: 100%;
-                //flex-direction: column;
-                //justify-content: center;
-                //align-items: center;
-                //don't need because only one item in nav compared to home-page nav
             }
 
             a {
@@ -194,7 +219,7 @@
                     font-size: 2rem;
                     text-align: center;
                     background-color: black;
-                    border-bottom: 1px solid white; //don't need these because only one nav item
+                    border-bottom: 1px solid white;
                 }
             }
 

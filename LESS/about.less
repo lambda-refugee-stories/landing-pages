@@ -1,4 +1,4 @@
-// Home Content
+// About Us
 
 .about {
     width: 100%;
@@ -13,6 +13,7 @@
       width: 90%;
     }
   
+
     // -------------- HEADER SECTION--------------
   
     .header-section {
@@ -39,8 +40,6 @@
         @media @mobile {
             display: none;
         }
-  
-  
       }
   
       .header-text {
@@ -48,8 +47,10 @@
         .section-padding();
       }
     }
+
+
   // -------------- QUOTE SECTION--------------
-  
+
   .quote {
       .section-top-margin();
       .section-padding();
@@ -64,7 +65,8 @@
           text-align: center;
       }
   }
-    
+   
+  
   // -------------- MAIN CONTENT SECTION--------------
   
     .member-container {
@@ -83,7 +85,6 @@
             .section-top-margin();
             width: 100%;
             //order: -1;
-  
         }
   
         img {
@@ -102,11 +103,16 @@
             order: -1; // pushes texts on top of photo always
         }
 
+        a {
+          text-decoration: none;
+          color: @mustard;
+          font-size: 4rem;
+        }
+
         p {
           margin-top: 15px;
         }
-      }
-    }
-  
-  }
+      } // .bio-text
+    } // .member-container
+  } // .about
   

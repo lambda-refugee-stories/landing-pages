@@ -2,7 +2,7 @@
 
 
 class Carousel {
-    constructor(element){
+    constructor(element) {
         this.element = element;
         this.leftButton = this.element.querySelector('.left-button');
         this.rightButton = this.element.querySelector('.right-button');
@@ -21,7 +21,7 @@ class Carousel {
             console.log('left arrow clicked!');
             console.log(this.images[0]);
         });
-        this.rightButton.addEventListener('click', () => { 
+        this.rightButton.addEventListener('click', () => {
             this.rightButtonClick();
             console.log('right arrow clicked!');
         });
@@ -29,9 +29,9 @@ class Carousel {
 
     // Methods
 
-    leftButtonClick(){
+    leftButtonClick() {
         this.images[this.currentIndex].style.display = 'none'
-        if(this.currentIndex === 0){
+        if (this.currentIndex === 0) {
             this.currentIndex = this.images.length - 1
         } else {
             this.currentIndex = this.currentIndex - 1
@@ -39,7 +39,7 @@ class Carousel {
         this.images[this.currentIndex].style.display = 'block'
     }
 
-    rightButtonClick(){
+    rightButtonClick() {
         this.images[this.currentIndex].style.display = 'none'
         if (this.currentIndex === this.images.length - 1) {
             this.currentIndex = 0

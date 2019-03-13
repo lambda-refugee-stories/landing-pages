@@ -1,93 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width = device-width, initial-scale = 1" />
-    <title>Refugee Stories - Home</title>
-    <link href="CSS/index.css" rel="stylesheet" />
-    <script src="JS/index.js" async></script>
-    <script src="JS/carousel.js" async></script>
-    <script src="JS/mobile-menu.js" async></script>
-    <script src="JS/previews.js" async></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Prata"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Rock Salt"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!---------- NAVIGATION SECTION ---------->
-    <section class="navigation-section">
-      <div class="container nav-container">
-        <p class="logo-heading">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width = device-width, initial-scale = 1" />
+  <title>Refugee Stories - Home</title>
+  <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+  <link href="CSS/index.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Rock Salt" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
+  <script src="JS/index.js" async></script>
+  <script src="JS/carousel.js" async></script>
+  <script src="JS/mobile-menu.js" async></script>
+  <script src="JS/previews.js" async></script>
+</head>
+
+<body>
+  <!---------- NAVIGATION SECTION ---------->
+  <section class="navigation-section">
+    <div class="container nav-container">
+      <a class="nav-logo" href="index.html">
+        <img src="Images/rs-logo-transparent.png" alt="Refugee Stories Logo">
+      </a>
+      <!-- <p class="logo-heading">
           Refugee<br />
           Stories
-        </p>
-        <nav class="nav">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="about.html">About Us</a>
-          <a
-            class="nav-link"
-            href="https://refugee-stories-frontend.netlify.com/"
-            >Stories</a
-          >
-          <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/submit">Submit Your Story</a>
-          <a
-            class="nav-link"
-            href="https://refugee-stories-frontend.netlify.com/login"
-            > <button class="login">Login</button></a
-          >
-        </nav>
-      </div>
-    </section>
-
-    <!--- MOBILE NAVIGATION MENU VERSION  --->
-    <div class="mobile-only">
-      <div class="mobile-header">
-        <img class="menu-button" src="Images/menu.png" />
-        <h4>Refugee Stories</h4>
-      </div>
-      <div class="menu">
-        <nav class="nav">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a
-            href="https://refugee-stories-frontend.netlify.com/"
-            >Stories</a
-          >
-          <a href="#">Submit Your Story</a>
-          <a  
-            href="https://refugee-stories-frontend.netlify.com/login"
-            >Login</a
-          >
-        </nav>
-      </div>
+        </p> -->
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/">Stories</a>
+        <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/submit">Submit Your Story</a>
+        <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/login"> <button
+            class="login">Login</button></a>
+      </nav>
     </div>
+  </section>
 
-    <!---------- HOME CONTAINER SECTION ---------->
-    <div class="container home">
-      <!---------- HEADER SECTION ---------->
-      <header class="header-section">
-        <h1>
-          Stories of the
-          <span style="font-family:'Rock Salt'; color: #93101D">Refugee</span
-          >:<br />
-          The Cries and the Crisis
-        </h1>
+  <!--- MOBILE NAVIGATION MENU VERSION  --->
+  <div class="mobile-only">
+    <div class="mobile-header">
+      <img class="menu-button" src="Images/menu.png" />
+      <h4>Refugee Stories</h4>
+      <a class="nav-logo" href="index.html">
+        <img src="Images/rs-logo-transparent.png" alt="Refugee Stories Logo">
+      </a>
+    </div>
+    <div class="menu">
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="https://refugee-stories-frontend.netlify.com/">Stories</a>
+        <a href="#">Submit Your Story</a>
+        <a href="https://refugee-stories-frontend.netlify.com/login">Login</a>
+      </nav>
+    </div>
+  </div>
 
-        <!---------- CAROUSEL COMPONENT ---------->
+  <!---------- HOME CONTAINER SECTION ---------->
+  <div class="container home">
+    <!---------- HEADER SECTION ---------->
+    <header class="header-section">
+      <h1>
+        Stories of the
+        <span style="font-family:'Rock Salt'; color: #93101D">Refugee</span>:<br />
+        The Cries and the Crisis
+      </h1>
 
-        <div class="carousel">
-          <div class="left-button"><</div>
-          <img class="carouselImage" src="Images/umbrella.jpeg" />
+      <!---------- CAROUSEL COMPONENT ---------->
+
+      <div class="carousel">
+        <div class="left-button">
+          <</div> <img class="carouselImage" src="Images/umbrella.jpeg" />
           <img class="carouselImage" src="Images/basket.jpeg" />
           <img class="carouselImage" src="Images/mother-and-baby.jpeg" />
           <div class="right-button">></div>
@@ -102,169 +87,206 @@
           the site will gain a better understanding of the refugee crisis and
           what it means to be a refugee.
         </p>
-      </header>
+    </header>
 
-      <!---------- QUOTE SECTION ---------->
-      <section class="quote">
-        <h4>
-          “Empathy may be the single most important quality that must be
-          nurtured to give peace a fighting chance.” <br />– Arundhati Ray
-        </h4>
-      </section>
+    <!---------- QUOTE SECTION ---------->
+    <section class="quote">
+      <h4>
+        “Empathy may be the single most important quality that must be
+        nurtured to give peace a fighting chance.” <br />– Arundhati Ray
+      </h4>
+    </section>
 
-      <!---------- MAIN CONTENT SECTION ---------->
-      <section class="who-is-a-refugee">
-        <h2>Who is a <span style="font-family:'Rock Salt'">Refugee</span>?</h2>
+    <!---------- MAIN CONTENT SECTION ---------->
+    <section class="who-is-a-refugee">
+      <h2>Who is a <span style="font-family:'Rock Salt'">Refugee</span>?</h2>
+      <p>
+        According to the United Nations Refugee Agency, refugees are people
+        who have fled war, violence, conflict or persecution and have crossed
+        an international border to find safety in another country.
+      </p>
+    </section>
+
+    <section class="stories-are-important">
+      <div class="stories-img-container">
+        <img class="long-wasteland" src="Images/wasteland.jpeg" alt="Long picture of wasteland" />
+        <img class="wide-wasteland" src="Images/wasteland-original.jpeg" alt="Wide picture of wasteland">
+      </div>
+      <div class="stories-are-important-text">
+        <h2>
+          Why are their
+          <span style="font-family:'Rock Salt'">stories</span> important?
+        </h2>
         <p>
-          According to the United Nations Refugee Agency, refugees are people
-          who have fled war, violence, conflict or persecution and have crossed
-          an international border to find safety in another country.
-        </p>
-      </section>
-
-      <section class="stories-are-important">
-        <div class="stories-img-container">
-          <img class= "long-wasteland" src="Images/wasteland.jpeg" alt="Long picture of wasteland" />
-          <img class= "wide-wasteland" src="Images/wasteland-original.jpeg" alt="Wide picture of wasteland">
-        </div>
-        <div class="stories-are-important-text">
-          <h2>
-            Why are their
-            <span style="font-family:'Rock Salt'">stories</span> important?
-          </h2>
-          <p>
-            We often hear about the political motives of war through televised
-            events, social media hashtags, and other modes of media. However,
-            seldom do people around the world get to learn about the
-            psychological, social, and personal impacts that these events have
-            on the people who are most directly affected and likely forgotten.
-            It is important for stories of refugees to be shared in order for
-            the world to become more aware of the perils these victims and
-            survivors of political turmoil face. Hopefully, with more empathy
-            can come better decision-making and avenues for peace.
-          </p>
-        </div>
-      </section>
-
-      <!---------- STORY PREVIEW SECTION --------->
-      <section class="story-previews">
-        <h2>Featured <span style="font-family:'Rock Salt'">Stories</span></h2>
-
-        <div class="preview">
-          <div class="preview-text">
-            <p class="title">Home Away From Home</p>
-            <h4 class="headline">
-              “I heard people screaming, and water crashing. I felt like I was
-              going to drown.”
-            </h4>
-            <p class ="full-story">Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
-                moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. Darth grievous darth gonk darth hutt. Darth baba skywalker
-                watto fett jango maul han. Mon ewok sidious sidious lando kenobi grievous gamorrean solo. Yoda wedge utapau darth calamari.
-                Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
-                jar twi'lek jinn leia jango skywalker mon. </p>
-            <button class="full-story-btn">Read full story</button>
-          </div>
-          <div class="author">
-            <div class="author-img-container">
-              <img src="Images/cristian.jpeg" alt="Picture of author" />
-            </div>
-            <p>By: John Lorane</p>
-          </div>
-        </div>
-
-        <div class="preview">
-          <div class="preview-text">
-            <p class="title">Surviving the Storm</p>
-            <h4 class="headline">
-              “We will never reach the shore. We will all sink.”
-            </h4>
-            <p class ="full-story">Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
-                moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. Darth grievous darth gonk darth hutt. Darth baba skywalker
-                watto fett jango maul han. Mon ewok sidious sidious lando kenobi grievous gamorrean solo. Yoda wedge utapau darth calamari.
-                Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
-                jar twi'lek jinn leia jango skywalker mon.Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek.<br> 
-                Ben amidala secura skywalker lando
-                moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. Darth grievous darth gonk darth hutt. Darth baba skywalker
-                watto fett jango maul han. Mon ewok sidious sidious lando kenobi grievous gamorrean solo. Yoda wedge utapau darth calamari.
-                Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
-                jar twi'lek jinn leia jango skywalker mon. </p>
-            <button class="full-story-btn">Read full story</button>
-          </div>
-          <div class="author">
-            <div class="author-img-container">
-              <img src="Images/penny.jpeg" alt="Picture of author" />
-            </div>
-            <p>By: Jane Zunish</p>
-          </div>
-        </div>
-
-        <div class="preview">
-          <div class="preview-text">
-            <p class= "title">In a Blink of an Eye</p>
-            <h4 class="headline">
-              “Please take the baby,” he said. “I am very tired.”
-            </h4>
-            <p class ="full-story">Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
-                moff wicket tatooine luke.Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
-                jar twi'lek jinn leia jango skywalker mon.Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek.<br> 
-                Ben amidala secura skywalker lando
-                moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. 
-                Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
-                jar twi'lek jinn leia jango skywalker mon. </p>
-            <button class="full-story-btn">Read full story</button>
-          </div>
-          <div class="author">
-            <div class="author-img-container">
-              <img src="Images/andre.jpeg" alt="Picture of author" />
-            </div>
-            <p>By: Arthur Torle</p>
-          </div>
-        </div>
-        <div class="btn">
-          <a href ="https://refugee-stories-frontend.netlify.com/"><button class="view-stories-btn">View All Stories</button></a>
-        </div>
-      </section>
-
-      <!---------- SUBMIT YOUR STORY FORM  ---------->
-      <!-- <section class="submit-story-section" id="submit-story">
-      <div class="submit-story-text">
-        <h2>Submit Your Story</h2>
-        <p>
-          If you are a refugee and would like to submit your story, please
-          fill out the form below. We value your voice and want to create a
-          safe space for you to be heard.
+          We often hear about the political motives of war through televised
+          events, social media hashtags, and other modes of media. However,
+          seldom do people around the world get to learn about the
+          psychological, social, and personal impacts that these events have
+          on the people who are most directly affected and likely forgotten.
+          It is important for stories of refugees to be shared in order for
+          the world to become more aware of the perils these victims and
+          survivors of political turmoil face. Hopefully, with more empathy
+          can come better decision-making and avenues for peace.
         </p>
       </div>
-      <form class="submit-story-form">
-        Name:<br />
-        <input class="short-line" type="text" name="name" placeholder="Your name..." /><br />
-        Your e-mail:<br />
-        <input class="short-line" type="email" name="email" placeholder="Your email..." /><br />
-        Your Story:<br />
-        <input class="long-line" type="text" name="story" placeholder="Write your story..."
-          style="overflow: scroll" /><br />
-        <input type="submit" value="Submit Your Story" />
-      </form>
-    </section> -->
-    </div>
+    </section>
 
-    <!---------- FOOTER SECTION ---------->
-    <footer class="footer-section">
-      <nav class="container nav-section">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About Us</a>
-        <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/"
-          >Stories</a
-        >
-        <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/submit">Submit Your Story</a>
-        <a
-          class="nav-link"
-          href="https://refugee-stories-frontend.netlify.com/login"
-          >Login</a
-        >
-      </nav>
-      <span>&copy; Refugee Stories 2019</span>
-    </footer>
-  </body>
+    <!---------- STORY PREVIEW SECTION --------->
+    <section class="story-previews">
+      <h2>Featured <span style="font-family:'Rock Salt'">Stories</span></h2>
+
+      <div class="preview">
+        <div class="preview-text">
+          <p class="title">Yaser's Story</p>
+          <h4 class="headline">
+            “Being scared was a permanent state of mind. I was always scared.”
+          </h4>
+          <p class="full-story">For two long years Yaser's* five children, Ali*, 15, Achmed*, 14, Hala*, 10, Sedra*, 7
+            and Aya*, 3, have not been able to go to school or play outside. Violence kept them from living a normal
+            life. There was constant fear of sniper and missile attacks. They learned what type of weapon was being used
+            just by the sound it made.
+
+            "Being scared was a permanent state of mind. I was always scared," said Achmed. "When I went to bed, I
+            always wondered if I would wake up the next morning."
+
+            Eventually the violence became too much for Yaser and his wife, and they made the decision to uproot their
+            family from their home in Syria in search of a better life in Germany. They were only able to make their
+            long and difficult journey from sunset to sunrise so they would not be spotted. Young Hala lost her glasses
+            during their trek.
+
+            "Everything is already strange, but now it is also blurry," she said. "It is very scary not to be able to
+            see clearly."
+
+            They walked for days until they reached the boat that would carry them to Germany. The water was rough and
+            the children were scared, but the family eventually made it. Now they must wait to register for asylum, a
+            process that takes up to two weeks. During those two weeks the family must wait outside the registration
+            center every day for their number to be called. There are no facilities or shelter from the rain.
+
+            "I am tired of waiting here all day. We just stand in the rain," said Achmed. "But I will tell you
+            something: after everything we have been through, a bit of rain can’t hurt me anymore."
+
+            <br>*Names have been changed to protect identities </p>
+          <button class="full-story-btn">Read full story</button>
+        </div>
+        <div class="author">
+          <div class="author-img-container">
+            <img src="Images/cristian.jpeg" alt="Picture of author" />
+          </div>
+          <p>By: Yaser</p>
+        </div>
+      </div>
+
+      <div class="preview">
+        <div class="preview-text">
+          <p class="title">Sana and Her Sisters Had to Leave Syria</p>
+          <h4 class="headline">
+            “We left Syria one week ago. There were so many explosions...so we had to leave Syria.”
+          </h4>
+          <p class="full-story">Sana is three years old and fled Syria with her mother and three sisters. An
+            increasingly brutal civil war is tearing Syria apart. One million people have now fled Syria and are
+            sheltering in neighboring countries. Sana's 12 year old sister Yasmine describes the reason the family left:
+
+            "We left Syria one week ago. There were so many explosions...so we had to leave Syria. What do I remember of
+            Syria? I remember two things — our house being bombed, and not having any bread. Most of the houses were
+            being hit. We had to stay in one room, all of us. The other rooms were being hit — shooting from the side of
+            the other rooms. The bombs were hitting constantly, I was very scared."
+
+            Sana* and her sisters were forced to live in one room for two weeks as their home was destroyed around them.
+            Yasmine* talks of her fear:
+
+            "I felt so afraid, I knew we could not move from that one room. There were 13 of us in total, crammed into
+            one room. We did not leave that room for two weeks. It was always so loud."
+
+            All of the sisters were gathered at home one day, and saw their father killed outside their home. Yasmine
+            describes that day:
+
+            "My father left the room. I watched my father leave, and watched as my father was shot outside our home. I
+            started to cry, I was so sad. We were living a normal life. We had enough food, now we depend on others.
+            Everything changed for me that day."
+
+            The family now live close to the Syria border in a neighboring country, in an informal settlement. Their
+            tent is small, dank and dark, and none of the children are going to school. Their mother leaves them each
+            day to try and find work in nearby towns, and to try and find food. Sana is deeply affected by what she
+            witnessed and endured in Syria.
+            <br>*Names have been changed to protect identities</p>
+          <button class="full-story-btn">Read full story</button>
+        </div>
+        <div class="author">
+          <div class="author-img-container">
+            <img src="Images/penny.jpeg" alt="Picture of author" />
+          </div>
+          <p>By: Sana</p>
+        </div>
+      </div>
+
+      <div class="preview">
+        <div class="preview-text">
+          <p class="title">Farah and Adnan's Story</p>
+          <h4 class="headline">
+            “I want to believe we can have a secure and peaceful life again.”
+          </h4>
+          <p class="full-story">Farah* and Adnan* led a comfortable, successful life in Syria. They had a large house
+            overlooking the city where they lived with their two children, Fathi*, 3, and Zeinah*, 1. Farah was hoping
+            to return to school to continue her education, which she put on hold after having her first child, and
+            Adnan, an Arabic teacher, was pursuing a law degree. Their large, tight-knit family – Adnan has 8 sisters
+            and 5 brothers and Farah has a large family as well – all lived nearby.
+
+            Then their house was seized by fighters because of its location. Soon after that is was destroyed. They were
+            homeless and nearby cities were under attack. Before the bombings could start in their city, Farah and Adnan
+            made the choice to leave their home in order to keep their children safe.
+
+            "My children were born in the city and my whole family lived there, but we had to flee to Turkey during one
+            of the outbreaks of fighting," said Farah. "If we hadn’t left when we did we would have been killed along
+            with so many other people. We left Syria at the right time."
+
+            Farah, Adnan and their children stayed in Turkey for one year before making the short but treacherous
+            journey to Kos, Greece. Farah thought they would die on the boat there, and when they arrived they were
+            often not treated well in their hotels and had to keep moving around. Farah estimates they spent almost
+            $1,400 on hotel rooms their first week in Kos.
+
+            Spending money on hotels is not their only worry though. Both of their children desperately need to see a
+            doctor.
+
+            "No one knows what is wrong with my son," Farah said. "His eyes are always inflamed, he has a sore throat
+            and every night his nose bleeds. My baby [Zeinah] also needs a doctor as she is bow legged and needs her
+            legs corrected."
+
+            Save the Children is giving Fathi and Zeinah the emotional and psychical support they need, but their
+            journey is far from over. Farah and Adnan are soon leaving Greece to make their way to Germany, a nearly
+            2,000 mile trek. Farah is just ready to find a place to call home.
+
+            "I want to believe we can have a secure and peaceful life again."
+
+            <br>*Names have been changed to protect identities </p>
+          <button class="full-story-btn">Read full story</button>
+        </div>
+        <div class="author">
+          <div class="author-img-container">
+            <img src="Images/andre.jpeg" alt="Picture of author" />
+          </div>
+          <p>By: Adnan</p>
+        </div>
+      </div>
+      <div class="btn">
+        <a href="https://refugee-stories-frontend.netlify.com/"><button class="view-stories-btn">View All
+            Stories</button></a>
+      </div>
+    </section>
+
+
+  </div>
+
+  <!---------- FOOTER SECTION ---------->
+  <footer class="footer-section">
+    <nav class="container nav-section">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About Us</a>
+      <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/">Stories</a>
+      <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/submit">Submit Your Story</a>
+      <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/login">Login</a>
+    </nav>
+    <span>&copy; Refugee Stories 2019</span>
+  </footer>
+</body>
+
 </html>
-

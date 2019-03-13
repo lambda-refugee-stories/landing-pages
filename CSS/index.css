@@ -466,11 +466,6 @@ p {
 img {
   max-width: 800px;
 }
-/*
- @m
-
-
-*/
 .navigation-section {
   width: 100%;
   height: 90px;
@@ -505,23 +500,15 @@ img {
     flex-direction: column;
   }
 }
-.navigation-section .nav-container .logo-heading {
-  font-family: 'Rock Salt';
-  color: white;
-  font-size: 2rem;
-  /* refer to mobile-menu.less
-            @media @mobile {
-                width: 100%;
-                background-color: black;
-                color: white;
-                border-bottom: 1px solid white;
-                text-align: center;
-                padding: 10px 0;
-            }
-            */
+.navigation-section .nav-container .nav-logo {
+  width: 10%;
+}
+.navigation-section .nav-container .nav-logo img {
+  width: 100%;
 }
 @media (max-width: 800px) {
-  .navigation-section .nav-container .logo-heading {
+  .navigation-section .nav-container .nav-logo {
+    width: 80px;
     padding: 5px;
   }
 }
@@ -632,6 +619,18 @@ img {
     border-bottom: 1px solid white;
     text-align: center;
     padding: 10px 0;
+  }
+}
+.about-navigation-section .nav-container .about-nav-logo {
+  width: 10%;
+}
+.about-navigation-section .nav-container .about-nav-logo img {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .about-navigation-section .nav-container .about-nav-logo {
+    width: 80px;
+    padding: 5px;
   }
 }
 .about-navigation-section .nav-container .about-nav {
@@ -810,6 +809,11 @@ img {
     order: -1;
   }
 }
+.about .member-container .bio-text a {
+  text-decoration: none;
+  color: #CBA328;
+  font-size: 4rem;
+}
 .about .member-container .bio-text p {
   margin-top: 15px;
 }
@@ -899,6 +903,12 @@ img {
   }
   .mobile-header h4 {
     color: white;
+  }
+  .mobile-header .nav-logo {
+    width: 15%;
+  }
+  .mobile-header .nav-logo img {
+    width: 100%;
   }
   .mobile-header .menu-button {
     cursor: pointer;
