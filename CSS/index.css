@@ -814,6 +814,11 @@ img {
     order: -1;
   }
 }
+.about .member-container .bio-text a {
+  text-decoration: none;
+  color: #CBA328;
+  font-size: 4rem;
+}
 .about .member-container .bio-text p {
   margin-top: 15px;
 }
