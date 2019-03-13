@@ -175,7 +175,7 @@
   width: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 @media (max-width: 500px) {
@@ -198,8 +198,16 @@
 .home .story-previews .preview .author p {
   text-align: center;
 }
+.home .story-previews .preview .full-story {
+  display: none;
+}
 .home .story-previews .article-open {
-  height: 400px;
+  height: auto;
+}
+.home .story-previews .article-open .full-story {
+  display: block;
+  padding: 10px;
+  font-size: 1.5rem;
 }
 .home .story-previews .btn {
   margin-top: 35px;
