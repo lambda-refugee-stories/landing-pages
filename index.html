@@ -8,8 +8,7 @@
     <script src="JS/index.js" async></script>
     <script src="JS/carousel.js" async></script>
     <script src="JS/mobile-menu.js" async></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script> -->
+    <script src="JS/previews.js" async></script>
     <link
       href="https://fonts.googleapis.com/css?family=Prata"
       rel="stylesheet"
@@ -40,11 +39,11 @@
             href="https://refugee-stories-frontend.netlify.com/"
             >Stories</a
           >
-          <a class="nav-link" href="#">Submit Your Story</a>
+          <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/submit">Submit Your Story</a>
           <a
             class="nav-link"
             href="https://refugee-stories-frontend.netlify.com/login"
-            >Login</a
+            > <button class="login">Login</button></a
           >
         </nav>
       </div>
@@ -125,7 +124,8 @@
 
       <section class="stories-are-important">
         <div class="stories-img-container">
-          <img src="Images/wasteland.jpeg" alt="Picture of refugee family" />
+          <img class= "long-wasteland" src="Images/wasteland.jpeg" alt="Long picture of wasteland" />
+          <img class= "wide-wasteland" src="Images/wasteland-original.jpeg" alt="Wide picture of wasteland">
         </div>
         <div class="stories-are-important-text">
           <h2>
@@ -152,11 +152,16 @@
 
         <div class="preview">
           <div class="preview-text">
-            <p>Home Away From Home</p>
+            <p class="title">Home Away From Home</p>
             <h4 class="headline">
               “I heard people screaming, and water crashing. I felt like I was
               going to drown.”
             </h4>
+            <p class ="full-story">Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
+                moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. Darth grievous darth gonk darth hutt. Darth baba skywalker
+                watto fett jango maul han. Mon ewok sidious sidious lando kenobi grievous gamorrean solo. Yoda wedge utapau darth calamari.
+                Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
+                jar twi'lek jinn leia jango skywalker mon. </p>
             <button class="full-story-btn">Read full story</button>
           </div>
           <div class="author">
@@ -169,10 +174,20 @@
 
         <div class="preview">
           <div class="preview-text">
-            <p>Surviving the Storm</p>
+            <p class="title">Surviving the Storm</p>
             <h4 class="headline">
               “We will never reach the shore. We will all sink.”
             </h4>
+            <p class ="full-story">Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
+                moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. Darth grievous darth gonk darth hutt. Darth baba skywalker
+                watto fett jango maul han. Mon ewok sidious sidious lando kenobi grievous gamorrean solo. Yoda wedge utapau darth calamari.
+                Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
+                jar twi'lek jinn leia jango skywalker mon.Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek.<br> 
+                Ben amidala secura skywalker lando
+                moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. Darth grievous darth gonk darth hutt. Darth baba skywalker
+                watto fett jango maul han. Mon ewok sidious sidious lando kenobi grievous gamorrean solo. Yoda wedge utapau darth calamari.
+                Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
+                jar twi'lek jinn leia jango skywalker mon. </p>
             <button class="full-story-btn">Read full story</button>
           </div>
           <div class="author">
@@ -185,10 +200,17 @@
 
         <div class="preview">
           <div class="preview-text">
-            <p>In a Blink of an Eye</p>
+            <p class= "title">In a Blink of an Eye</p>
             <h4 class="headline">
               “Please take the baby,” he said. “I am very tired.”
             </h4>
+            <p class ="full-story">Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
+                moff wicket tatooine luke.Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
+                jar twi'lek jinn leia jango skywalker mon.Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek.<br> 
+                Ben amidala secura skywalker lando
+                moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. 
+                Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
+                jar twi'lek jinn leia jango skywalker mon. </p>
             <button class="full-story-btn">Read full story</button>
           </div>
           <div class="author">
@@ -199,7 +221,7 @@
           </div>
         </div>
         <div class="btn">
-          <button class="view-stories-btn">View All Stories</button>
+          <a href ="https://refugee-stories-frontend.netlify.com/"><button class="view-stories-btn">View All Stories</button></a>
         </div>
       </section>
 
@@ -234,7 +256,7 @@
         <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/"
           >Stories</a
         >
-        <a class="nav-link" href="#">Submit Your Story</a>
+        <a class="nav-link" href="https://refugee-stories-frontend.netlify.com/submit">Submit Your Story</a>
         <a
           class="nav-link"
           href="https://refugee-stories-frontend.netlify.com/login"

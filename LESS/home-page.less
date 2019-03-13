@@ -5,8 +5,8 @@
   background-color: white;
 
   @media @tablet {
-      width: 90%;
-      padding: 20px;
+    width: 90%;
+    padding: 20px;
   }
   @media @mobile {
     width: 90%;
@@ -23,19 +23,18 @@
       line-height: 1.5;
 
       @media @mobile {
-          width: 90%;
-          margin: 0 auto; //centers
+        width: 90%;
+        margin: 0 auto; //centers
       }
     }
-    
 
     .header-text {
       .section-padding();
     }
   }
-// -------------- QUOTE  SECTION--------------
+  // -------------- QUOTE  SECTION--------------
 
-.quote {
+  .quote {
     .section-top-margin();
     .section-padding();
     padding-bottom: 35px;
@@ -43,13 +42,13 @@
     border-top: 3px solid black;
 
     h4 {
-        width: 70%;
-        margin: 0 auto;
-        text-align: center;
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
     }
-}
-  
-// -------------- MAIN CONTENT SECTION--------------
+  }
+
+  // -------------- MAIN CONTENT SECTION--------------
 
   .who-is-a-refugee {
     //.section-top-margin(); // because quote section has bottom padding
@@ -68,12 +67,12 @@
     justify-content: space-between;
 
     @media @tablet {
-        flex-direction: column;
+      flex-direction: column;
     }
-    
+
     //redundant
     @media @mobile {
-        flex-direction: column;
+      flex-direction: column;
     }
 
     .stories-img-container {
@@ -81,16 +80,28 @@
 
       @media @tablet {
         width: 100%;
-    }
+      }
 
       //redundant
       @media @mobile {
-          width: 100%;
-
+        width: 100%;
       }
 
-      img {
+      .long-wasteland {
         width: 100%;
+
+        @media @tablet {
+          display: none;
+        }
+      }
+
+      .wide-wasteland {
+        display: none;
+        width: 100%;
+
+        @media @tablet {
+          display: block;
+        }
       }
     }
 
@@ -100,11 +111,11 @@
       @media @tablet {
         .section-top-margin();
         width: 100%;
-    }
+      }
       //redundant
       @media @mobile {
-          .section-top-margin();
-          width: 100%;
+        .section-top-margin();
+        width: 100%;
       }
 
       p {
@@ -124,6 +135,9 @@
     justify-content: space-evenly;
 
     .preview {
+      // don't need height and overflow setting because I made full story paragraph initial display: none;
+      //height: 500px;
+      //overflow: hidden;
       background-color: @mustard;
       border-radius: 15px;
       display: flex;
@@ -133,7 +147,7 @@
       justify-content: space-between;
 
       @media @mobile {
-          flex-direction: column;
+        flex-direction: column;
       }
 
       .preview-text {
@@ -145,7 +159,7 @@
         text-align: center;
 
         @media @mobile {
-            width: 100%;
+          width: 100%;
         }
 
         h3 {
@@ -155,7 +169,6 @@
         .full-story-btn {
           .custom-btn(40%);
           margin-top: 15px;
-
         }
       }
 
@@ -163,19 +176,18 @@
         width: 25%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
 
         @media @mobile {
-            display: none;
-
+          display: none;
         }
 
         .author-img-container {
           width: 70%;
 
           @media @mobile {
-              width: 10%;
+            width: 10%;
           }
 
           img {
@@ -188,24 +200,48 @@
           text-align: center;
         }
       }
+
+      // set display: none on full story paragraph until .article-open is toggled on
+      .full-story {
+        display: none;
+      }
     } // .preview
+
+    .article-open {
+      height: auto; // container height automatically fits content
+
+      .full-story {
+        // story is expanded when .article-open is added to classList (toggled on and off)
+        display: block; 
+        //margin-top: 15px;
+        padding: 10px;
+        font-size: 1.5rem;
+      }
+    }
 
     .btn {
       .section-top-margin();
 
-      .view-stories-btn {
-        .custom-btn(100%);
+      a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: white;
+
+        .view-stories-btn {
+          .custom-btn(100%);
+          z-index: 1;
+        }
       }
     }
   } // .story-previews section
-
 } // .home
 
 
 
-  // -------------- SUBMIT YOUR STORY FORM SECTION--------------
 
-  /*
+// -------------- SUBMIT YOUR STORY FORM SECTION--------------
+
+/*
   .submit-story-section {
     //.section-top-margin(); // because above button has bottom padding
     .section-padding();
@@ -264,4 +300,3 @@
   } // submit your story form
 
   */
-

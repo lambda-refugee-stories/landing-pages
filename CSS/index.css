@@ -81,8 +81,22 @@
     width: 100%;
   }
 }
-.home .stories-are-important .stories-img-container img {
+.home .stories-are-important .stories-img-container .long-wasteland {
   width: 100%;
+}
+@media (max-width: 800px) {
+  .home .stories-are-important .stories-img-container .long-wasteland {
+    display: none;
+  }
+}
+.home .stories-are-important .stories-img-container .wide-wasteland {
+  display: none;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .home .stories-are-important .stories-img-container .wide-wasteland {
+    display: block;
+  }
 }
 .home .stories-are-important .stories-are-important-text {
   width: 55%;
@@ -148,6 +162,7 @@
   font-size: 1.4rem;
   border: 1px solid grey;
   border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
   margin-top: 15px;
 }
 .home .story-previews .preview .preview-text .full-story-btn:hover {
@@ -160,7 +175,7 @@
   width: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 @media (max-width: 500px) {
@@ -183,10 +198,26 @@
 .home .story-previews .preview .author p {
   text-align: center;
 }
+.home .story-previews .preview .full-story {
+  display: none;
+}
+.home .story-previews .article-open {
+  height: auto;
+}
+.home .story-previews .article-open .full-story {
+  display: block;
+  padding: 10px;
+  font-size: 1.5rem;
+}
 .home .story-previews .btn {
   margin-top: 35px;
 }
-.home .story-previews .btn .view-stories-btn {
+.home .story-previews .btn a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+.home .story-previews .btn a .view-stories-btn {
   width: 100%;
   background-color: black;
   color: white;
@@ -194,8 +225,10 @@
   font-size: 1.4rem;
   border: 1px solid grey;
   border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  z-index: 1;
 }
-.home .story-previews .btn .view-stories-btn:hover {
+.home .story-previews .btn a .view-stories-btn:hover {
   background-color: white;
   color: #93101D;
   border: 1px solid #93101D;
@@ -496,6 +529,7 @@ img {
   width: 75%;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   /* refer to mobile-menu.less
             @media @mobile {
                 width: 100%;
@@ -525,6 +559,25 @@ img {
                     border-bottom: 1px solid white;
                 }
                 */
+}
+.navigation-section .nav-container .nav a .login {
+  width: 100px;
+  background-color: black;
+  color: white;
+  padding: 10px 2px;
+  font-size: 1.4rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #CBA328;
+  color: black;
+  font-size: 1.6rem;
+}
+.navigation-section .nav-container .nav a .login:hover {
+  background-color: white;
+  color: #93101D;
+  border: 1px solid #93101D;
+  cursor: pointer;
 }
 .about-navigation-section {
   width: 100%;
@@ -626,6 +679,7 @@ img {
 .footer-section .nav-section {
   display: flex;
   justify-content: space-between;
+  padding: 0 5%;
 }
 @media (max-width: 800px) {
   .footer-section .nav-section {
