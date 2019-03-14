@@ -19,7 +19,7 @@ class Carousel {
         this.leftButton.addEventListener('click', () => {
             this.leftButtonClick();
             console.log('left arrow clicked!');
-            console.log(this.images[0]);
+            //console.log(this.images[0]);
         });
         this.rightButton.addEventListener('click', () => {
             this.rightButtonClick();

@@ -63,8 +63,27 @@
         width: 100%;
         display: none;
         position: absolute;
-        opacity: 1;
-        transition: visibility 10s, opacity 5s linear;
+        //opacity: 1;
+        animation-name: fade;
+	    animation-timing-function: ease-in-out;
+	    //animation-iteration-count: infinite;
+	    animation-duration: 1s;
+	    animation-direction: alternate;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        25% {
+            opacity: .5;
+        }
+        75% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
 }
