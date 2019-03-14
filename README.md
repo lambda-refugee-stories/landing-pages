@@ -23,7 +23,7 @@
 
 ### Styling for this webpage was done through LESS. It's advised to edit CSS styles through the various .less files and not the index.css file directly. Keep in mind, the index.less file should be used to import needed .less files and should not contain unique or new code.
 
-### Below are the respective .html, .less and, .js files
+### Below are the respective .html, .less and, .js files:
 
 | Global         | Home Page        | About Us Page   |
 | -------------- | --------------   | --------------  |
